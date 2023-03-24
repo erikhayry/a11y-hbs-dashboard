@@ -19,7 +19,7 @@ async function analyze({url, name}){
     const builder = new AxeBuilder({ client });
     try {
         const {violations, incomplete} = await builder.analyze();
-        const report = {
+        return {
             name,
             url,
             result: {
@@ -29,10 +29,9 @@ async function analyze({url, name}){
             violations,
             incomplete
         }
-        fs.writeFileSync(`./result/${name}.json`, JSON.stringify(report, null, 2))
-
     } catch (e) {
         console.error(e);
+        process.exit()
     }
 }
 
@@ -51,7 +50,8 @@ const banks = [
 
 ]
 async function init() {
-    await Promise.all(banks.map((bank) => analyze(bank)))
+    const results = await Promise.all(banks.map((bank) => analyze(bank)))
+    fs.writeFileSync(`./bank-a11y-dashboard/db/results.json`, JSON.stringify(results, null, 2))
     process.exit()
 }
 
