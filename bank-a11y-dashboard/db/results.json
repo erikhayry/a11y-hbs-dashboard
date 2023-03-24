@@ -3,8 +3,8 @@
     "name": "handelsbanken",
     "url": "http://www.handelsbanken.se",
     "result": {
-      "numberOfViolations": 1,
-      "numberOfIncomplete": 1
+      "numberOfViolations": 13,
+      "numberOfIncomplete": 3
     },
     "violations": [
       {
@@ -591,8 +591,8 @@
     "name": "seb",
     "url": "http://www.seb.se",
     "result": {
-      "numberOfViolations": 1,
-      "numberOfIncomplete": 1
+      "numberOfViolations": 2,
+      "numberOfIncomplete": 10
     },
     "violations": [
       {
@@ -994,8 +994,8 @@
     "name": "sbab",
     "url": "http://www.sbab.se",
     "result": {
-      "numberOfViolations": 4,
-      "numberOfIncomplete": 2
+      "numberOfViolations": 10,
+      "numberOfIncomplete": 43
     },
     "violations": [
       {
@@ -2485,8 +2485,8 @@
     "name": "swebank",
     "url": "http://www.swebank.se",
     "result": {
-      "numberOfViolations": 4,
-      "numberOfIncomplete": 1
+      "numberOfViolations": 6,
+      "numberOfIncomplete": 3
     },
     "violations": [
       {
@@ -2884,8 +2884,8 @@
     "name": "klarna",
     "url": "http://www.klarna.se",
     "result": {
-      "numberOfViolations": 4,
-      "numberOfIncomplete": 1
+      "numberOfViolations": 10,
+      "numberOfIncomplete": 8
     },
     "violations": [
       {
@@ -3029,7 +3029,7 @@
             "impact": "moderate",
             "html": "<h3 class=\"sc-kDDrLX bxLCIc\">Köp det du älskar med Klarna. Det är precis som shopping ska vara – enkelt, säkert och roligt.</h3>",
             "target": [
-              "h3"
+              ".bxLCIc"
             ],
             "failureSummary": "Fix any of the following:\n  Heading order invalid"
           },
@@ -3206,7 +3206,7 @@
             "impact": "serious",
             "html": "<h3 class=\"sc-kDDrLX bxLCIc\">Köp det du älskar med Klarna. Det är precis som shopping ska vara – enkelt, säkert och roligt.</h3>",
             "target": [
-              "h3"
+              ".bxLCIc"
             ],
             "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
           },
@@ -3407,6 +3407,32 @@
               "a[href$=\"klarna.com/\"] > .iltVbJ.sc-34e99b6e-0"
             ],
             "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "elmPartiallyObscuring",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it partially overlaps other elements"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p id=\"onetrust-policy-text\">Vi använder cookies för att få den här webbplatsen att fungera samt för att anpassa och analysera din surfing. Vi delar också data med våra annonspartner. <a href=\"https://www.klarna.com/se/cookies/\">Läs mer</a></p>",
+            "target": [
+              "#onetrust-policy-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
           }
         ]
       }
@@ -3416,8 +3442,8 @@
     "name": "nordea",
     "url": "http://www.nordea.se",
     "result": {
-      "numberOfViolations": 3,
-      "numberOfIncomplete": 1
+      "numberOfViolations": 6,
+      "numberOfIncomplete": 36
     },
     "violations": [
       {
@@ -4670,8 +4696,8 @@
     "name": "danskebank",
     "url": "http://www.danskebank.se",
     "result": {
-      "numberOfViolations": 6,
-      "numberOfIncomplete": 2
+      "numberOfViolations": 11,
+      "numberOfIncomplete": 15
     },
     "violations": [
       {
@@ -5633,7 +5659,7 @@
               }
             ],
             "impact": "critical",
-            "html": "<video id=\"vjs_video_1_html5_api\" tabindex=\"-1\" class=\"vjs-tech\" src=\"blob:https://video.qbrick.com/b76bc44a-a0a1-4c4d-969f-89b836b86d87\" playsinline=\"\" webkit-playsinline=\"\"></video>",
+            "html": "<video id=\"vjs_video_1_html5_api\" tabindex=\"-1\" class=\"vjs-tech\" src=\"blob:https://video.qbrick.com/7727702d-3a5e-4303-913b-3cb5c5d7f68d\" playsinline=\"\" webkit-playsinline=\"\"></video>",
             "target": [
               "iframe[frameborder=\"0\"]",
               "#vjs_video_1_html5_api"
@@ -5648,8 +5674,8 @@
     "name": "lansforsakringar",
     "url": "http://www.lansforsakringar.se",
     "result": {
-      "numberOfViolations": 7,
-      "numberOfIncomplete": 1
+      "numberOfViolations": 14,
+      "numberOfIncomplete": 17
     },
     "violations": [
       {
@@ -5681,7 +5707,7 @@
             "impact": "critical",
             "html": "<div type=\"text\" class=\"custom-select-dd\" id=\"companySelection\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t<span>Stockholm</span>\n\t</div>",
             "target": [
-              "#a58e16d371c64796a5ec2f72b05f1c92-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
+              "#b2ce708767ae407bab9243a319922d4e-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
             ],
             "failureSummary": "Fix any of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
           },
@@ -5709,191 +5735,6 @@
         ]
       },
       {
-        "id": "color-contrast",
-        "impact": "serious",
-        "tags": [
-          "cat.color",
-          "wcag2aa",
-          "wcag143",
-          "ACT"
-        ],
-        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
-        "help": "Elements must have sufficient color contrast",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/color-contrast?application=webdriverio",
-        "nodes": [
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fgColor": "#74a5cb",
-                  "bgColor": "#ffffff",
-                  "contrastRatio": 2.62,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "bold",
-                  "messageKey": null,
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<a href=\"/privat/bank/lana/bolan/\" class=\"shortcut topimage-shortcut-item\" data-linktype=\"link_with_icon\" data-linktext=\"Räkna på bolån\">",
-                    "target": [
-                      ".link-with-icon.mb-component > a[href$=\"bolan/\"]"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element has insufficient color contrast of 2.62 (foreground color: #74a5cb, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<h4 class=\"break-word\">Räkna på bolån</h4>",
-            "target": [
-              "a[href$=\"bolan/\"] > h4"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.62 (foreground color: #74a5cb, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fgColor": "#74a5cb",
-                  "bgColor": "#ffffff",
-                  "contrastRatio": 2.62,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "bold",
-                  "messageKey": null,
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<a href=\"/privat/bank/bli-bankkund/\" class=\"shortcut topimage-shortcut-item\" data-linktype=\"link_with_icon\" data-linktext=\"Bli bankkund\">",
-                    "target": [
-                      "a[data-linktext=\"Bli bankkund\"]"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element has insufficient color contrast of 2.62 (foreground color: #74a5cb, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<h4 class=\"break-word\">Bli bankkund</h4>",
-            "target": [
-              "a[data-linktext=\"Bli bankkund\"] > h4"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.62 (foreground color: #74a5cb, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fgColor": "#74a5cb",
-                  "bgColor": "#ffffff",
-                  "contrastRatio": 2.62,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "bold",
-                  "messageKey": null,
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<a href=\"/privat/forsakring/bilforsakring/\" class=\"shortcut topimage-shortcut-item\" data-linktype=\"link_with_icon\" data-linktext=\"Köp bilförsäkring\">",
-                    "target": [
-                      "a[data-linktext=\"Köp bilförsäkring\"]"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element has insufficient color contrast of 2.62 (foreground color: #74a5cb, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<h4 class=\"break-word\">Köp bilförsäkring</h4>",
-            "target": [
-              "a[data-linktext=\"Köp bilförsäkring\"] > h4"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.62 (foreground color: #74a5cb, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fgColor": "#74a5cb",
-                  "bgColor": "#ffffff",
-                  "contrastRatio": 2.62,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "bold",
-                  "messageKey": null,
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<a href=\"/privat/forsakring/hemforsakring/\" class=\"shortcut topimage-shortcut-item\" data-linktype=\"link_with_icon\" data-linktext=\"Köp hemförsäkring\">",
-                    "target": [
-                      "a[data-linktext=\"Köp hemförsäkring\"]"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element has insufficient color contrast of 2.62 (foreground color: #74a5cb, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<h4 class=\"break-word\">Köp hemförsäkring</h4>",
-            "target": [
-              "a[data-linktext=\"Köp hemförsäkring\"] > h4"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.62 (foreground color: #74a5cb, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fgColor": "#74a5cb",
-                  "bgColor": "#ffffff",
-                  "contrastRatio": 2.62,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "bold",
-                  "messageKey": null,
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<a href=\"/privat/forsakring/skadeanmalan/\" class=\"shortcut topimage-shortcut-item\" data-linktype=\"link_with_icon\" data-linktext=\"Anmäl skada\">",
-                    "target": [
-                      "a[data-linktext=\"Anmäl skada\"]"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element has insufficient color contrast of 2.62 (foreground color: #74a5cb, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<h4 class=\"break-word\">Anmäl skada</h4>",
-            "target": [
-              "a[data-linktext=\"Anmäl skada\"] > h4"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.62 (foreground color: #74a5cb, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
-          }
-        ]
-      },
-      {
         "id": "duplicate-id-aria",
         "impact": "critical",
         "tags": [
@@ -5914,13 +5755,13 @@
                   {
                     "html": "<div type=\"text\" class=\"custom-select-dd\" id=\"companySelection\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t<span>Stockholm</span>\n\t</div>",
                     "target": [
-                      "#a053e178c89a43bdb007e27bfc733d90-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
+                      "#f8fd97af9c6e48a08e65b3c2274d66b2-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
                     ]
                   },
                   {
                     "html": "<div type=\"text\" class=\"custom-select-dd\" id=\"companySelection\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t<span>Stockholm</span>\n\t</div>",
                     "target": [
-                      "#\\39 86c9f4905834398a1544e17dca08dd4-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
+                      "#\\34 6faa26371f0465e88330fed41dbaca0-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
                     ]
                   },
                   {
@@ -5939,7 +5780,7 @@
             "impact": "critical",
             "html": "<div type=\"text\" class=\"custom-select-dd\" id=\"companySelection\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t<span>Stockholm</span>\n\t</div>",
             "target": [
-              "#a58e16d371c64796a5ec2f72b05f1c92-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
+              "#b2ce708767ae407bab9243a319922d4e-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: companySelection"
           }
@@ -7243,7 +7084,7 @@
                   {
                     "html": "<div type=\"text\" class=\"custom-select-dd\" id=\"companySelection\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t<span>Stockholm</span>\n\t</div>",
                     "target": [
-                      "#a58e16d371c64796a5ec2f72b05f1c92-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
+                      "#b2ce708767ae407bab9243a319922d4e-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
                     ]
                   }
                 ],
@@ -7256,7 +7097,7 @@
             "impact": "serious",
             "html": "<span>Stockholm</span>",
             "target": [
-              "#a58e16d371c64796a5ec2f72b05f1c92-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"] > span"
+              "#b2ce708767ae407bab9243a319922d4e-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"] > span"
             ],
             "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
           },
@@ -7665,7 +7506,7 @@
                 },
                 "relatedNodes": [
                   {
-                    "html": "<a href=\"/stockholm/privat/om-oss/press-media/nyheter/\" data-token=\"QYjDAuXHkQSZxYTVKvunPJu43owYlMfsBOYC_dVAFf6bM7GkxJ3BBkKxN4KcRMPwIa0klWDBipQQ0xNfWjfD8eZ4No7Jmb3SgEWXN8f2BIM1:X6e9ri95ynYqMhP9W4CjT39b-8VOOzAoSncLbbzQ6VSpUR_m6l-gc04oJVS1nlEYUvMV9fbhYjjKFS6jGaHBtqYBsKbaphtD3TGoGzdt5XQ1\">",
+                    "html": "<a href=\"/stockholm/privat/om-oss/press-media/nyheter/\" data-token=\"5L-20N_NowlP-5afPPK7jio0II0TsjiZshL2RV5UT17z9L8XPhjLDsaPFUHBvEIvM0ZEMJGnepo_ZtdUy2AgdbDSjGBIs86IzlQ6UYivS1E1:_bsDYjHsCtP7-kH_Cn1v4C9-HUxe67JMaeubiNGXgMmzSHQFDXQZr9tgqQif_stw2uBjClfS-8B_YL73kgkuLnbHBMk9hVixFQyG3vHDVEc1\">",
                     "target": [
                       ".justify-content-between > a"
                     ]
@@ -7678,7 +7519,7 @@
             "all": [],
             "none": [],
             "impact": "serious",
-            "html": "<a href=\"/stockholm/privat/om-oss/press-media/nyheter/\" data-token=\"QYjDAuXHkQSZxYTVKvunPJu43owYlMfsBOYC_dVAFf6bM7GkxJ3BBkKxN4KcRMPwIa0klWDBipQQ0xNfWjfD8eZ4No7Jmb3SgEWXN8f2BIM1:X6e9ri95ynYqMhP9W4CjT39b-8VOOzAoSncLbbzQ6VSpUR_m6l-gc04oJVS1nlEYUvMV9fbhYjjKFS6jGaHBtqYBsKbaphtD3TGoGzdt5XQ1\">",
+            "html": "<a href=\"/stockholm/privat/om-oss/press-media/nyheter/\" data-token=\"5L-20N_NowlP-5afPPK7jio0II0TsjiZshL2RV5UT17z9L8XPhjLDsaPFUHBvEIvM0ZEMJGnepo_ZtdUy2AgdbDSjGBIs86IzlQ6UYivS1E1:_bsDYjHsCtP7-kH_Cn1v4C9-HUxe67JMaeubiNGXgMmzSHQFDXQZr9tgqQif_stw2uBjClfS-8B_YL73kgkuLnbHBMk9hVixFQyG3vHDVEc1\">",
             "target": [
               ".justify-content-between > a"
             ],
@@ -7784,8 +7625,8 @@
     "name": "skandia",
     "url": "http://www.skandia.se",
     "result": {
-      "numberOfViolations": 8,
-      "numberOfIncomplete": 2
+      "numberOfViolations": 18,
+      "numberOfIncomplete": 16
     },
     "violations": [
       {
@@ -7996,7 +7837,7 @@
             ],
             "none": [],
             "impact": "critical",
-            "html": "<button class=\"he-link he-expandlink\" type=\"button\" data-he-collapse=\"\" data-toggle=\"collapse\" data-target=\"#CampaignItemBlock_01aa083a-d658-4615-bd44-e11c00b6949b\" aria-controls=\"collapse\">\n                    De mest sålda fonderna i februari bland våra utvalda fonder\n                </button>",
+            "html": "<button class=\"he-link he-expandlink\" type=\"button\" data-he-collapse=\"\" data-toggle=\"collapse\" data-target=\"#CampaignItemBlock_fa52899a-e94e-48c3-9521-625619c24f70\" aria-controls=\"collapse\">\n                    De mest sålda fonderna i februari bland våra utvalda fonder\n                </button>",
             "target": [
               "button[type=\"button\"]"
             ],
@@ -8056,7 +7897,7 @@
             "impact": "serious",
             "html": "<iframe title=\"\" data-src=\"https://player.vimeo.com/video/810125495\" class=\"lazyload\" width=\"500\" height=\"281\" allowfullscreen=\"\"></iframe>",
             "target": [
-              ".epi-video > iframe"
+              "iframe[width=\"500\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element has an empty title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
           }

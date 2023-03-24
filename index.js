@@ -2,6 +2,10 @@ const AxeBuilder = require('@axe-core/webdriverio').default;
 const { remote } = require('webdriverio');
 const fs = require('fs');
 
+function toNumberOfNodes(numberOfNodes, { nodes }) {
+    return numberOfNodes + nodes.length
+}
+
 async function analyze({url, name}){
     const client = await remote({
         logLevel: 'error',
@@ -23,8 +27,8 @@ async function analyze({url, name}){
             name,
             url,
             result: {
-                numberOfViolations: violations.length,
-                numberOfIncomplete: incomplete.length,
+                numberOfViolations: violations.reduce(toNumberOfNodes, 0),
+                numberOfIncomplete: incomplete.reduce(toNumberOfNodes, 0),
             },
             violations,
             incomplete
