@@ -1,0 +1,1436 @@
+{
+  "name": "skandia",
+  "url": "http://www.skandia.se",
+  "result": {
+    "numberOfViolations": 8,
+    "numberOfIncomplete": 2
+  },
+  "violations": [
+    {
+      "id": "aria-dialog-name",
+      "impact": "serious",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "description": "Ensures every ARIA dialog and alertdialog node has an accessible name",
+      "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/aria-dialog-name?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div role=\"dialog\" id=\"modal\" aria-labelledby=\"aria-title\" aria-describedby=\"aria-description\" data-testid=\"cookie-banner\" class=\"ui modal transition visible active CookieBanner\">",
+          "target": [
+            "#modal"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "aria-required-children",
+      "impact": "critical",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131"
+      ],
+      "description": "Ensures elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/aria-required-children?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "aria-required-children",
+              "data": {
+                "messageKey": "unallowed"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a class=\"he-ideogram he-ideogram--light\" data-he-ideogram=\"he-save-buffer\" href=\"/spara-pension/kom-igang-med-sparande/\" ontouchstart=\"\"></a>",
+                  "target": [
+                    ".he-ideogram--light.he-ideogram[data-he-ideogram=\"he-save-buffer\"]"
+                  ]
+                },
+                {
+                  "html": "<a class=\"he-ideogram he-ideogram--light\" data-he-ideogram=\"he-mortgage\" href=\"/lana/bolan/bolanekalkyl/\" ontouchstart=\"\"></a>",
+                  "target": [
+                    "a[data-he-ideogram=\"he-mortgage\"]"
+                  ]
+                },
+                {
+                  "html": "<a class=\"he-ideogram he-ideogram--light\" data-he-ideogram=\"he-life-insurance\" href=\"/forsakra/olika-satt-att-forsakra/\" ontouchstart=\"\"></a>",
+                  "target": [
+                    ".he-ideogram--light.he-ideogram[data-he-ideogram=\"he-life-insurance\"]"
+                  ]
+                },
+                {
+                  "html": "<a class=\"he-ideogram he-ideogram--light\" data-he-ideogram=\"he-change-bank\" href=\"/vardagstjanster/bli-kund-hos-oss/\" ontouchstart=\"\"></a>",
+                  "target": [
+                    "a[data-he-ideogram=\"he-change-bank\"]"
+                  ]
+                },
+                {
+                  "html": "<a class=\"he-ideogram he-ideogram--light\" data-he-ideogram=\"he-cohesion\" href=\"/om-oss/hallbarhet/samhallsengagemang/\" ontouchstart=\"\"></a>",
+                  "target": [
+                    "a[data-he-ideogram=\"he-cohesion\"]"
+                  ]
+                },
+                {
+                  "html": "<a class=\"he-button\" href=\"/spara-pension/kom-igang-med-sparande/\" ontouchstart=\"\">Börja spara nu</a>",
+                  "target": [
+                    "li[role=\"none\"]:nth-child(1) > .he-menu-info > .sk-background-color-blue.he-contrast-light.he-box > div > .he-button[ontouchstart=\"\"]"
+                  ]
+                },
+                {
+                  "html": "<a class=\"he-button\" href=\"/lana/bolan/bolanekalkyl/\" ontouchstart=\"\">Räkna på ditt bolån</a>",
+                  "target": [
+                    ".he-button[href$=\"bolanekalkyl/\"][ontouchstart=\"\"]"
+                  ]
+                },
+                {
+                  "html": "<a class=\"he-button\" href=\"/forsakra/olika-satt-att-forsakra/\" ontouchstart=\"\">Våra försäkringar</a>",
+                  "target": [
+                    "li[role=\"none\"]:nth-child(3) > .he-menu-info > .sk-background-color-blue.he-contrast-light.he-box > div > .he-button[ontouchstart=\"\"]"
+                  ]
+                },
+                {
+                  "html": "<a class=\"he-button\" href=\"/vardagstjanster/bli-kund-hos-oss/\" ontouchstart=\"\">Bli kund direkt</a>",
+                  "target": [
+                    "li[role=\"none\"]:nth-child(4) > .he-menu-info > .sk-background-color-blue.he-contrast-light.he-box > div > .he-button[ontouchstart=\"\"]"
+                  ]
+                },
+                {
+                  "html": "<a class=\"he-button\" href=\"/om-oss/hallbarhet/samhallsengagemang/\" ontouchstart=\"\">Läs mer</a>",
+                  "target": [
+                    "li[role=\"none\"]:nth-child(6) > .he-menu-info > .sk-background-color-blue.he-contrast-light.he-box > div > .he-button[ontouchstart=\"\"]"
+                  ]
+                },
+                {
+                  "html": "<a href=\"/spara-pension/kom-igang-med-sparande/\" ontouchstart=\"\">Få fart på sparandet</a>",
+                  "target": [
+                    "li[role=\"none\"]:nth-child(1) > .he-menu-info > .sk-background-color-blue.he-contrast-light.he-box > div > .he-headline > a[ontouchstart=\"\"]"
+                  ]
+                },
+                {
+                  "html": "<a href=\"/lana/bolan/bolanekalkyl/\" ontouchstart=\"\">Räkna på din ränta</a>",
+                  "target": [
+                    ".he-headline > a[href$=\"bolanekalkyl/\"][ontouchstart=\"\"]"
+                  ]
+                },
+                {
+                  "html": "<a href=\"/forsakra/olika-satt-att-forsakra/\" ontouchstart=\"\">Rätt försäkrad?</a>",
+                  "target": [
+                    "li[role=\"none\"]:nth-child(3) > .he-menu-info > .sk-background-color-blue.he-contrast-light.he-box > div > .he-headline > a[ontouchstart=\"\"]"
+                  ]
+                },
+                {
+                  "html": "<a href=\"/vardagstjanster/bli-kund-hos-oss/\" ontouchstart=\"\">Bli kund direkt</a>",
+                  "target": [
+                    "li[role=\"none\"]:nth-child(4) > .he-menu-info > .sk-background-color-blue.he-contrast-light.he-box > div > .he-headline > a[ontouchstart=\"\"]"
+                  ]
+                },
+                {
+                  "html": "<a href=\"/om-oss/hallbarhet/samhallsengagemang/\" ontouchstart=\"\">Bidra till ett bättre samhälle</a>",
+                  "target": [
+                    "li[role=\"none\"]:nth-child(6) > .he-menu-info > .sk-background-color-blue.he-contrast-light.he-box > div > .he-headline > a[ontouchstart=\"\"]"
+                  ]
+                }
+              ],
+              "impact": "critical",
+              "message": "Element has children which are not allowed (see related nodes)"
+            },
+            {
+              "id": "aria-busy",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no aria-busy=\"true\" attribute"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<ul aria-label=\"Skandia navigationsmeny\" class=\"he-menu\" data-he-menu=\"\" id=\"he-menu\" role=\"menubar\">",
+          "target": [
+            "#he-menu"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed (see related nodes)\n  Element has no aria-busy=\"true\" attribute"
+        }
+      ]
+    },
+    {
+      "id": "aria-valid-attr-value",
+      "impact": "critical",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ],
+      "description": "Ensures all ARIA attributes have valid values",
+      "help": "ARIA attributes must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/aria-valid-attr-value?application=webdriverio",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": [
+                "aria-controls=\"collapse\""
+              ],
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Invalid ARIA attribute value: aria-controls=\"collapse\""
+            }
+          ],
+          "none": [],
+          "impact": "critical",
+          "html": "<button class=\"he-link he-expandlink\" type=\"button\" data-he-collapse=\"\" data-toggle=\"collapse\" data-target=\"#CampaignItemBlock_fc152e48-1701-44c2-ac1c-3bd34d62fe10\" aria-controls=\"collapse\">\n                    De mest sålda fonderna i februari bland våra utvalda fonder\n                </button>",
+          "target": [
+            "button[type=\"button\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-controls=\"collapse\""
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i"
+      ],
+      "description": "Ensures <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/frame-title?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "emptyAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has an empty title attribute"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<iframe title=\"\" data-src=\"https://player.vimeo.com/video/810125495\" class=\"lazyload\" width=\"500\" height=\"281\" allowfullscreen=\"\"></iframe>",
+          "target": [
+            ".epi-video > iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has an empty title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensures the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/landmark-no-duplicate-banner?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "page-no-duplicate-banner",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<header id=\"he-header-menu\" class=\"he-menuRow\">",
+                  "target": [
+                    "#he-header-menu"
+                  ]
+                },
+                {
+                  "html": "<header class=\"he-searchHeader\" data-he-search2=\"\" data-he-search2-suggestionurl=\"/epi-api/find/quicksearch?pageid=25997&amp;query=\" data-he-search2-autofillquery=\"true\">",
+                  "target": [
+                    ".he-searchHeader"
+                  ]
+                },
+                {
+                  "html": "<header class=\"Accessibility-header\">",
+                  "target": [
+                    ".Accessibility-header"
+                  ]
+                }
+              ],
+              "impact": "moderate",
+              "message": "Document has more than one banner landmark"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<header class=\"he-logoRow\">",
+          "target": [
+            ".he-logoRow"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "help": "Ensures landmarks are unique",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/landmark-unique?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "banner",
+                "accessibleText": null
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header id=\"he-header-menu\" class=\"he-menuRow\">",
+                  "target": [
+                    "#he-header-menu"
+                  ]
+                },
+                {
+                  "html": "<header class=\"he-searchHeader\" data-he-search2=\"\" data-he-search2-suggestionurl=\"/epi-api/find/quicksearch?pageid=25997&amp;query=\" data-he-search2-autofillquery=\"true\">",
+                  "target": [
+                    ".he-searchHeader"
+                  ]
+                },
+                {
+                  "html": "<header class=\"Accessibility-header\">",
+                  "target": [
+                    ".Accessibility-header"
+                  ]
+                }
+              ],
+              "impact": "moderate",
+              "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<header class=\"he-logoRow\">",
+          "target": [
+            ".he-logoRow"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
+                "accessibleText": null
+              },
+              "relatedNodes": [
+                {
+                  "html": "<nav class=\"he-menuRowContainer\">",
+                  "target": [
+                    ".he-menuRowContainer"
+                  ]
+                },
+                {
+                  "html": "<nav class=\"he-searchResultContainer\"></nav>",
+                  "target": [
+                    ".he-searchResultContainer"
+                  ]
+                }
+              ],
+              "impact": "moderate",
+              "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<nav class=\"he-logoRowContainer\">",
+          "target": [
+            ".he-logoRowContainer"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "wcag244",
+        "section508",
+        "section508.22.a",
+        "ACT"
+      ],
+      "description": "Ensures links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/link-name?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"/om-oss/nyheter/nyhetsarkiv/2023/5-psykologiska-trick-som-ger-battre-ekonomi/\" ontouchstart=\"\" class=\"he-no-icon\">",
+          "target": [
+            "article:nth-child(1) > .he-no-icon[ontouchstart=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"/om-oss/nyheter/nyhetsarkiv/2023/skandia-liv-ger-skydd/\" ontouchstart=\"\" class=\"he-no-icon\">",
+          "target": [
+            "article:nth-child(2) > .he-no-icon[ontouchstart=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"/om-oss/nyheter/nyhetsarkiv/2023/varfor-ar-det-stokigt-pa-marknaden/\" ontouchstart=\"\" class=\"he-no-icon\">",
+          "target": [
+            "article:nth-child(3) > .he-no-icon[ontouchstart=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"/om-oss/nyheter/nyhetsarkiv/2023/arets-livforsakringsbolag/\" ontouchstart=\"\" class=\"he-no-icon\">",
+          "target": [
+            "article:nth-child(4) > .he-no-icon[ontouchstart=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"/om-oss/nyheter/nyhetsarkiv/2023/spara-hallbart-vi-hjalper/\" ontouchstart=\"\" class=\"he-no-icon\">",
+          "target": [
+            "article:nth-child(5) > .he-no-icon[ontouchstart=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"tel:\" ontouchstart=\"\"></a>",
+          "target": [
+            "a[href$=\"tel:\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://www.facebook.com/skandiasverige/about\" class=\"he-facebook he-external\" target=\"_blank\" rel=\"noopener noreferrer\" ontouchstart=\"\"></a>",
+          "target": [
+            ".he-facebook"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://twitter.com/SkandiaSE\" class=\"he-twitter he-external\" target=\"_blank\" rel=\"noopener noreferrer\" ontouchstart=\"\"></a>",
+          "target": [
+            ".he-twitter"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://www.linkedin.com/company/skandia/\" class=\"he-linkedin he-external\" target=\"_blank\" rel=\"noopener noreferrer\" ontouchstart=\"\"></a>",
+          "target": [
+            ".he-linkedin"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://www.instagram.com/skandiase/\" class=\"he-instagram he-external\" target=\"_blank\" rel=\"noopener noreferrer\" ontouchstart=\"\"></a>",
+          "target": [
+            ".he-instagram"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "description": "Ensures all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/region?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<input type=\"checkbox\" id=\"heMenuTogglerButton\" class=\"he-small-menu-toggler\">",
+          "target": [
+            "#heMenuTogglerButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "aria-valid-attr-value",
+      "impact": "critical",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ],
+      "description": "Ensures all ARIA attributes have valid values",
+      "help": "ARIA attributes must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/aria-valid-attr-value?application=webdriverio",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": {
+                "messageKey": "noId",
+                "needsReview": "aria-describedby=\"aria-description\""
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute element ID does not exist on the page: aria-describedby=\"aria-description\""
+            }
+          ],
+          "none": [],
+          "impact": "critical",
+          "html": "<div role=\"dialog\" id=\"modal\" aria-labelledby=\"aria-title\" aria-describedby=\"aria-description\" data-testid=\"cookie-banner\" class=\"ui modal transition visible active CookieBanner\">",
+          "target": [
+            "#modal"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute element ID does not exist on the page: aria-describedby=\"aria-description\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "ACT"
+      ],
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/color-contrast?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a class=\"he-primary he-button he-no-icon\" data-statistics-name=\"logga_in\" data-statistics-type=\"cta\" href=\"/logga-in/\" ontouchstart=\"\"><i class=\"fa fa-lock\"></i>Logga in</a>",
+                  "target": [
+                    ".he-logoRowContainer > .he-pagelinks > a[data-statistics-name=\"logga_in\"][href$=\"logga-in/\"][data-statistics-type=\"cta\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"he-primary he-button he-no-icon\" data-statistics-name=\"logga_in\" data-statistics-type=\"cta\" href=\"/logga-in/\" ontouchstart=\"\"><i class=\"fa fa-lock\"></i>Logga in</a>",
+          "target": [
+            ".he-logoRowContainer > .he-pagelinks > a[data-statistics-name=\"logga_in\"][href$=\"logga-in/\"][data-statistics-type=\"cta\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#222222",
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"title\">Välkommen</p>",
+          "target": [
+            ".title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#222222",
+                "contrastRatio": 0,
+                "fontSize": "22.5pt (30.0006px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2>Vad vill du göra idag?</h2>",
+          "target": [
+            ".he-linkTiles__header > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#191919",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"item_linkText\">Räkna på ditt pensionssparande</span>",
+          "target": [
+            ".he-linkTiles__item[data-statistics-product-name=\"snabbingangar_privat_startsida\"][data-statistics-clickable=\"\"]:nth-child(1) > .item_linkText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#191919",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"item_linkText\">Få hjälp av din hälso- och vårdförsäkring</span>",
+          "target": [
+            ".he-linkTiles__item[data-statistics-product-name=\"snabbingangar_privat_startsida\"][data-statistics-clickable=\"\"]:nth-child(2) > .item_linkText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#191919",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"item_linkText\">Flytta din pension till oss</span>",
+          "target": [
+            ".he-linkTiles__item[data-statistics-product-name=\"snabbingangar_privat_startsida\"][data-statistics-clickable=\"\"]:nth-child(3) > .item_linkText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#191919",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"item_linkText\">Räkna på din bolåneränta</span>",
+          "target": [
+            ".he-linkTiles__item[data-statistics-product-name=\"snabbingangar_privat_startsida\"][data-statistics-clickable=\"\"]:nth-child(4) > .item_linkText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#191919",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"item_linkText\">Komma igång med sparande</span>",
+          "target": [
+            ".he-linkTiles__item[data-statistics-product-name=\"snabbingangar_privat_startsida\"][data-statistics-clickable=\"\"]:nth-child(5) > .item_linkText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#191919",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"item_linkText\">Hämta BankID</span>",
+          "target": [
+            ".he-linkTiles__item[data-statistics-product-name=\"snabbingangar_privat_startsida\"][data-statistics-clickable=\"\"]:nth-child(6) > .item_linkText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#222222",
+                "contrastRatio": 0,
+                "fontSize": "22.5pt (30.0006px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"\">Ett tryggt sparande</h2>",
+          "target": [
+            ".he-grid-6:nth-child(1) > .he-padding-grid.he-no-padding.he-box > .he-padding-grid-12 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#191919",
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>När det svänger på börsen kan det vara skönt med ett sparande som ger en jämn utveckling över tid. Kapitalförsäkring inom Skandia Liv är ett tryggt sparande med återbäringsränta och garanti.</p>",
+          "target": [
+            ".he-grid-6:nth-child(1) > .he-padding-grid.he-no-padding.he-box > .he-padding-grid-12 > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#222222",
+                "contrastRatio": 0,
+                "fontSize": "22.5pt (30.0006px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2>\n                        Samla din pension hos oss - få vårdförsäkring\n                    </h2>",
+          "target": [
+            ".he-grid-6:nth-child(2) > .marketing-block[marketing-box-block=\"\"] > .marketing-block__text > .he-box > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#191919",
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>Har du haft flera arbetsgivare under karriären kan du ha din pension utspridd hos flera olika aktörer. Samla din pension till oss och få flera fördelar, som bättre överblick och rabatt på bolån. Just nu får du även Vårdförsäkring Olycksfall kostnadsfritt.</p>",
+          "target": [
+            ".he-grid-6:nth-child(2) > .marketing-block[marketing-box-block=\"\"] > .marketing-block__text > .he-box > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<label for=\"CookieBannerBlock_Statistics\"><div><p>Statistik</p></div></label>",
+                  "target": [
+                    "label[for=\"CookieBannerBlock_Statistics\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>Statistik</p>",
+          "target": [
+            "label[for=\"CookieBannerBlock_Statistics\"] > div > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<label for=\"CookieBannerBlock_Functional\"><div><p>Funktion</p></div></label>",
+                  "target": [
+                    "label[for=\"CookieBannerBlock_Functional\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>Funktion</p>",
+          "target": [
+            "label[for=\"CookieBannerBlock_Functional\"] > div > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "avanza",
+  "url": "http://www.avanza.se",
+  "result": {
+    "numberOfViolations": 1,
+    "numberOfIncomplete": 0
+  },
+  "violations": [
+    {
+      "id": "meta-viewport",
+      "impact": "critical",
+      "tags": [
+        "cat.sensory-and-visual-cues",
+        "wcag2aa",
+        "wcag144",
+        "ACT"
+      ],
+      "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
+      "help": "Zooming and scaling must not be disabled",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/meta-viewport?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "meta-viewport",
+              "data": "user-scalable=no",
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "user-scalable=no on <meta> tag disables zooming on mobile devices"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover\">",
+          "target": [
+            "meta[name=\"viewport\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+        }
+      ]
+    }
+  ],
+  "incomplete": []
+}

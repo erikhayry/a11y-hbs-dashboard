@@ -1,0 +1,403 @@
+{
+  "name": "seb",
+  "url": "http://www.seb.se",
+  "result": {
+    "numberOfViolations": 1,
+    "numberOfIncomplete": 1
+  },
+  "violations": [
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412"
+      ],
+      "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/nested-interactive?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<input type=\"checkbox\" id=\"cc-cat-1\" pref-accept-category=\"\" value=\"1\">",
+                  "target": [
+                    "#cc-cat-1"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div role=\"button\" class=\"pw-accordion__header\" tabindex=\"0\" aria-controls=\"pw-accordion-desc-1\" aria-expanded=\"false\">",
+          "target": [
+            "div[aria-controls=\"pw-accordion-desc-1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<input type=\"checkbox\" id=\"cc-cat-32\" pref-accept-category=\"\" value=\"32\">",
+                  "target": [
+                    "#cc-cat-32"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div role=\"button\" class=\"pw-accordion__header\" tabindex=\"0\" aria-controls=\"pw-accordion-desc-32\" aria-expanded=\"false\">",
+          "target": [
+            "div[aria-controls=\"pw-accordion-desc-32\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        }
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "ACT"
+      ],
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/color-contrast?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "72.0pt (96px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"pw-welcome  pw-welcome--large-heading pw-dark-theme  \">",
+                  "target": [
+                    ".pw-welcome"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h1 id=\"nu-bryter-vi-entreprenormen\" class=\"pw-welcome__heading\">Nu bryter vi entreprenormen</h1>",
+          "target": [
+            "#nu-bryter-vi-entreprenormen"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "17.6pt (23.4px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"pw-welcome  pw-welcome--large-heading pw-dark-theme  \">",
+                  "target": [
+                    ".pw-welcome"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"pw-preamble\">Bara 30 % av alla företag ägs av kvinnor. Vi på SEB vill bana väg för <br>ett jämställt entreprenörskap – så att alla får forma framtiden.</p>",
+          "target": [
+            ".pw-preamble"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"pw-welcome  pw-welcome--large-heading pw-dark-theme  \">",
+                  "target": [
+                    ".pw-welcome"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/equal-opportunity?icmp=sebsep_genbrand_welstart_x_equalopportunity\" target=\"_self\" class=\"sdv-button\">Se vad du kan göra</a>",
+          "target": [
+            ".sdv-button[target=\"_self\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "14.4pt (19.2px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"pw-welcome  pw-welcome--large-heading pw-dark-theme  \">",
+                  "target": [
+                    ".pw-welcome"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"pw-link-arrow\" href=\"/bors-och-finans?icmp=sebsep_borsfinans_wel_x_bors#/financial-pages/start\" title=\"Börs och finans\">Börs och finans</a>",
+          "target": [
+            "a[title=\"Börs och finans\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "14.4pt (19.2px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"pw-welcome  pw-welcome--large-heading pw-dark-theme  \">",
+                  "target": [
+                    ".pw-welcome"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"pw-link-arrow\" href=\"/bors-och-finans/fonder/fondlista?icmp=sebsep_borsfinans_wel_x_fondlista#/\" title=\"Fondlista\">Fondlista</a>",
+          "target": [
+            "a[title=\"Fondlista\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "14.4pt (19.2px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"pw-welcome  pw-welcome--large-heading pw-dark-theme  \">",
+                  "target": [
+                    ".pw-welcome"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"pw-link-arrow\" href=\"/privat/ekonominyheter?icmp=sebsep_genother_welstart_x_ekonominyheter\" title=\"Ekonominyheter\">Ekonominyheter</a>",
+          "target": [
+            "a[title=\"Ekonominyheter\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "14.4pt (19.2px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"pw-welcome  pw-welcome--large-heading pw-dark-theme  \">",
+                  "target": [
+                    ".pw-welcome"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"pw-link-arrow\" href=\"/var-kundservice?icmp=sebsep_kundservice_wel_x_faq\" title=\"Vanliga frågor och svar\">Vanliga frågor och svar</a>",
+          "target": [
+            "a[title=\"Vanliga frågor och svar\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "14.4pt (19.2px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"pw-welcome  pw-welcome--large-heading pw-dark-theme  \">",
+                  "target": [
+                    ".pw-welcome"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"pw-link-arrow\" href=\"/privat/verktyg-for-din-ekonomi/mobilt-bankid?icmp=sebsep_digitalatjanster_wel_x_mobiltbankid\" title=\"Skaffa mobilt BankID\">Skaffa mobilt BankID</a>",
+          "target": [
+            "a[title=\"Skaffa mobilt BankID\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<label for=\"cc-cat-1\"><div class=\"pw-sr-only\">Optimering: </div><span>Av</span></label>",
+                  "target": [
+                    "label[for=\"cc-cat-1\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Av</span>",
+          "target": [
+            "label[for=\"cc-cat-1\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<label for=\"cc-cat-32\"><div class=\"pw-sr-only\">Personalisering: </div><span>Av</span></label>",
+                  "target": [
+                    "label[for=\"cc-cat-32\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Av</span>",
+          "target": [
+            "label[for=\"cc-cat-32\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        }
+      ]
+    }
+  ]
+}

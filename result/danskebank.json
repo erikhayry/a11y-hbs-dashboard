@@ -1,0 +1,978 @@
+{
+  "name": "danskebank",
+  "url": "http://www.danskebank.se",
+  "result": {
+    "numberOfViolations": 6,
+    "numberOfIncomplete": 2
+  },
+  "violations": [
+    {
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ],
+      "description": "Ensures ARIA attributes are allowed for an element's role",
+      "help": "Elements must only use allowed ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/aria-allowed-attr?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "aria-allowed-attr",
+              "data": [
+                "aria-expanded=\"false\""
+              ],
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is not allowed: aria-expanded=\"false\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<a data-toggle=\"dropsaco_forbund\" class=\"button \" aria-controls=\"dropsaco_forbund\" aria-expanded=\"false\" title=\"Välj ett förbund…\" tabindex=\"0\" data-is-focus=\"false\" data-yeti-box=\"dropsaco_forbund\" aria-haspopup=\"true\">",
+          "target": [
+            "a[data-toggle=\"dropsaco_forbund\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "any": [
+            {
+              "id": "aria-allowed-attr",
+              "data": [
+                "aria-expanded=\"false\""
+              ],
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is not allowed: aria-expanded=\"false\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<a data-toggle=\"droptco_forbund\" class=\"button \" aria-controls=\"droptco_forbund\" aria-expanded=\"false\" title=\"Välj ett förbund…\" tabindex=\"0\" data-is-focus=\"false\" data-yeti-box=\"droptco_forbund\" aria-haspopup=\"true\">",
+          "target": [
+            "a[data-toggle=\"droptco_forbund\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        }
+      ]
+    },
+    {
+      "id": "aria-required-children",
+      "impact": "critical",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131"
+      ],
+      "description": "Ensures elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/aria-required-children?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "aria-required-children",
+              "data": {
+                "messageKey": "unallowed"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div id=\"read-more-footer-content\" aria-hidden=\"true\" role=\"tabpanel\" aria-labelledby=\"read-more-footer-toggle\" class=\"read-more-content\">",
+                  "target": [
+                    "#read-more-footer-content"
+                  ]
+                }
+              ],
+              "impact": "critical",
+              "message": "Element has children which are not allowed (see related nodes)"
+            },
+            {
+              "id": "aria-busy",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no aria-busy=\"true\" attribute"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<div data-module=\"read-more\" role=\"tablist\" class=\"columns medium-9\">",
+          "target": [
+            "div[data-module=\"read-more\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed (see related nodes)\n  Element has no aria-busy=\"true\" attribute"
+        }
+      ]
+    },
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "ACT"
+      ],
+      "description": "Ensures buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/button-name?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"custom-controls-button custom-controls-button-play\">",
+          "target": [
+            "iframe[frameborder=\"0\"]",
+            ".custom-controls-button-play"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"custom-controls-button custom-controls-button-vol\">",
+          "target": [
+            "iframe[frameborder=\"0\"]",
+            ".custom-controls-button-vol"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"custom-controls-button custom-controls-button-lightbox\">",
+          "target": [
+            "iframe[frameborder=\"0\"]",
+            ".custom-controls-button-lightbox"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"custom-controls-button custom-controls-button-fullscreen\">",
+          "target": [
+            "iframe[frameborder=\"0\"]",
+            ".custom-controls-button-fullscreen"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i"
+      ],
+      "description": "Ensures <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/frame-title?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<iframe src=\"https://video.qbrick.com/play2/embed/player?accountId=AccFVgN9LwYokGZ2bBu7fEu4w&amp;mediaId=87db96f1-f1fa-415e-8233-d352e396fc91&amp;configId=db-standard&amp;pageStyling=adaptive&amp;autoplay=false&amp;repeat=false&amp;sharing=false\" frameborder=\"0\" allowfullscreen=\"\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\">",
+          "target": [
+            "iframe[frameborder=\"0\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensures the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/heading-order?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order invalid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<h3><font size=\"6\">Danske Bank Fackmedlem\n</font></h3>",
+          "target": [
+            ".card-blue-6.card > .card-content > span > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order invalid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<h5><strong>Välj ett TCO-förbund här:</strong></h5>",
+          "target": [
+            "span:nth-child(2) > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "object-alt",
+      "impact": "serious",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a"
+      ],
+      "description": "Ensures <object> elements have alternate text",
+      "help": "<object> elements must have alternate text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/object-alt?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<object style=\"display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; pointer-events: none; z-index: -1;\" tabindex=\"-1\" type=\"text/html\" data=\"about:blank\"></object>",
+          "target": [
+            "iframe[frameborder=\"0\"]",
+            "object"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "ACT"
+      ],
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/color-contrast?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<ul class=\"settings-menu\">",
+                  "target": [
+                    ".settings-menu"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/foretag\" aria-label=\"Företag\">Företag</a>",
+          "target": [
+            "a[aria-label=\"Företag\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<ul class=\"settings-menu\">",
+                  "target": [
+                    ".settings-menu"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Andra sidor</span>",
+          "target": [
+            "button[data-toggle=\"dropsites\"] > .prompt > .title > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button data-button-login-desktop=\"\" aria-controls=\"platform-detector\" aria-expanded=\"false\" aria-label=\"Logga in\" class=\"button cta show-for-medium\"><span>Logga in</span><svg class=\"icon logoff\"><use xlink:href=\"#svg-logoff\"></use></svg></button>",
+                  "target": [
+                    "button[data-button-login-desktop=\"\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Logga in</span>",
+          "target": [
+            "button[data-button-login-desktop=\"\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "33.0pt (44px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<main id=\"main-content\" tabindex=\"-1\" class=\"section-container menu-desktop\">",
+                  "target": [
+                    "#main-content"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h1>Läge att prata bolån?</h1>",
+          "target": [
+            ".text-center.vertical-align-inner.card-content > h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<main id=\"main-content\" tabindex=\"-1\" class=\"section-container menu-desktop\">",
+                  "target": [
+                    "#main-content"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"color-blue-2\">Vi hjälper dig i osäkra tider med personlig rådgivning kring din boendeekonomi.</p>",
+          "target": [
+            ".color-blue-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<main id=\"main-content\" tabindex=\"-1\" class=\"section-container menu-desktop\">",
+                  "target": [
+                    "#main-content"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"button secondary\" href=\"/privat/produkter/bolan\">Räkna och ansök om bolån</a>",
+          "target": [
+            ".secondary.button[href$=\"bolan\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "24.0pt (32px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<main id=\"main-content\" tabindex=\"-1\" class=\"section-container menu-desktop\">",
+                  "target": [
+                    "#main-content"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<font size=\"6\">Danske Bank Fackmedlem\n</font>",
+          "target": [
+            ".card-blue-6.card > .card-content > span > h3 > font[size=\"6\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<main id=\"main-content\" tabindex=\"-1\" class=\"section-container menu-desktop\">",
+                  "target": [
+                    "#main-content"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>Ta del av ett av marknadens mest förmånliga erbjudanden. Som kund hos oss får du bland annat:</p>",
+          "target": [
+            ".card-content > .row > .end.columns > span:nth-child(1) > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<main id=\"main-content\" tabindex=\"-1\" class=\"section-container menu-desktop\">",
+                  "target": [
+                    "#main-content"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li>En av marknadens bästa bolånerabatter</li>",
+          "target": [
+            "span:nth-child(1) > .check-list > li:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#002337",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<li>",
+                  "target": [
+                    ".menu > li"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Kundservice</span>",
+          "target": [
+            ".menu-button > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#002337",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"cookie-consent-banner-text\" id=\"cookie-text\" tabindex=\"-1\">",
+          "target": [
+            "#cookie-text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" id=\"button-accept-all\" data-consent-set=\"3\" class=\"button\">OK till alla</button>",
+                  "target": [
+                    "#button-accept-all"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" id=\"button-accept-all\" data-consent-set=\"3\" class=\"button\">OK till alla</button>",
+          "target": [
+            "#button-accept-all"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#007bc7",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div id=\"cookie-buttons\" class=\"cookie-consent-banner-buttons\">",
+                  "target": [
+                    "#cookie-buttons"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Cookieinställningar</span>",
+          "target": [
+            "#link-show-categories > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        }
+      ]
+    },
+    {
+      "id": "video-caption",
+      "impact": "critical",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag122",
+        "section508",
+        "section508.22.a"
+      ],
+      "description": "Ensures <video> elements have captions",
+      "help": "<video> elements must have captions",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/video-caption?application=webdriverio",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "caption",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Check that captions is available for the element"
+            }
+          ],
+          "impact": "critical",
+          "html": "<video autoplay=\"\" loop=\"\" muted=\"\">",
+          "target": [
+            "video"
+          ],
+          "failureSummary": "Fix all of the following:\n  Check that captions is available for the element"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "caption",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Check that captions is available for the element"
+            }
+          ],
+          "impact": "critical",
+          "html": "<video id=\"vjs_video_1_html5_api\" tabindex=\"-1\" class=\"vjs-tech\" src=\"blob:https://video.qbrick.com/6b719403-eb69-4021-8add-05ece35f619e\" playsinline=\"\" webkit-playsinline=\"\"></video>",
+          "target": [
+            "iframe[frameborder=\"0\"]",
+            "#vjs_video_1_html5_api"
+          ],
+          "failureSummary": "Fix all of the following:\n  Check that captions is available for the element"
+        }
+      ]
+    }
+  ]
+}

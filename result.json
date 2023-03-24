@@ -1,0 +1,68 @@
+[
+  {
+    "id": "aria-allowed-role",
+    "impact": "minor",
+    "tags": [
+      "cat.aria",
+      "best-practice"
+    ],
+    "description": "Ensures role attribute has an appropriate value for the element",
+    "help": "ARIA role should be appropriate for the element",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/aria-allowed-role?application=webdriverio",
+    "nodes": [
+      {
+        "any": [
+          {
+            "id": "aria-allowed-role",
+            "data": [
+              "combobox"
+            ],
+            "relatedNodes": [],
+            "impact": "minor",
+            "message": "ARIA role combobox is not allowed for given element"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "minor",
+        "html": "<input id=\"searchInHeader\" name=\"searchInHeader\" placeholder=\"Sök\" class=\"shb-input-text__text-input   css-u577xf\" maxlength=\"50\" inputmode=\"search\" data-test-id=\"shb-sepu-search__field\" role=\"combobox\" aria-controls=\"searchInHeader__autosuggest-list\" autocomplete=\"off\" aria-expanded=\"false\" list=\"searchInHeader_list\" value=\"\">",
+        "target": [
+          "#searchInHeader"
+        ],
+        "failureSummary": "Fix any of the following:\n  ARIA role combobox is not allowed for given element"
+      }
+    ]
+  },
+  {
+    "id": "tabindex",
+    "impact": "serious",
+    "tags": [
+      "cat.keyboard",
+      "best-practice"
+    ],
+    "description": "Ensures tabindex attribute values are not greater than 0",
+    "help": "Elements should not have tabindex greater than zero",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/tabindex?application=webdriverio",
+    "nodes": [
+      {
+        "any": [
+          {
+            "id": "tabindex",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "Element has a tabindex greater than 0"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<a href=\"/sv/\" title=\"Handelsbanken - till startsidan\" tabindex=\"1\" accesskey=\"1\" class=\"shb-sepu-header__logo-wrapper\"><img class=\"shb-sepu-header__logo\" itemprop=\"logo\" src=\"/sv/sepu/img/jedi/base/kit/shb-large-logo.svg\" alt=\"Handelsbanken\" height=\"22\" width=\"207\" fetchpriority=\"high\"></a>",
+        "target": [
+          ".shb-sepu-header__logo-wrapper"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+      }
+    ]
+  }
+]

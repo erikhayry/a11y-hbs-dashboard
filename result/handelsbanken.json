@@ -1,0 +1,588 @@
+{
+  "name": "handelsbanken",
+  "url": "http://www.handelsbanken.se",
+  "result": {
+    "numberOfViolations": 1,
+    "numberOfIncomplete": 1
+  },
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "ACT"
+      ],
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/color-contrast?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005fa5",
+                "bgColor": "#043b62",
+                "contrastRatio": 1.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"shb-sepu-app-sub-footer\">",
+                  "target": [
+                    ".shb-sepu-app-sub-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Behandling av personuppgifter</span>",
+          "target": [
+            ".shb-sepu-app-sub-footer__links-list-item:nth-child(1) > .css-18e1rf1.shb-text-link-white.shb-text-link > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005fa5",
+                "bgColor": "#043b62",
+                "contrastRatio": 1.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"shb-sepu-app-sub-footer\">",
+                  "target": [
+                    ".shb-sepu-app-sub-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Cookies</span>",
+          "target": [
+            ".shb-sepu-app-sub-footer__links-list-item:nth-child(2) > .css-18e1rf1.shb-text-link-white.shb-text-link > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005fa5",
+                "bgColor": "#043b62",
+                "contrastRatio": 1.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"shb-sepu-app-sub-footer\">",
+                  "target": [
+                    ".shb-sepu-app-sub-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Juridiska dokument</span>",
+          "target": [
+            "a[href$=\"juridiska-dokument\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005fa5",
+                "bgColor": "#043b62",
+                "contrastRatio": 1.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"shb-sepu-app-sub-footer\">",
+                  "target": [
+                    ".shb-sepu-app-sub-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Säkerhet</span>",
+          "target": [
+            ".shb-sepu-app-sub-footer__links-list-item:nth-child(4) > .css-18e1rf1.shb-text-link-white.shb-text-link > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005fa5",
+                "bgColor": "#043b62",
+                "contrastRatio": 1.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"shb-sepu-app-sub-footer\">",
+                  "target": [
+                    ".shb-sepu-app-sub-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Sociala medier</span>",
+          "target": [
+            ".shb-sepu-app-sub-footer__links-list-item:nth-child(5) > .css-18e1rf1.shb-text-link-white.shb-text-link > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005fa5",
+                "bgColor": "#043b62",
+                "contrastRatio": 1.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"shb-sepu-app-sub-footer\">",
+                  "target": [
+                    ".shb-sepu-app-sub-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Ekonomi och livet</span>",
+          "target": [
+            "a[href$=\"ekonomi-och-livet\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005fa5",
+                "bgColor": "#043b62",
+                "contrastRatio": 1.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"shb-sepu-app-sub-footer\">",
+                  "target": [
+                    ".shb-sepu-app-sub-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"shb-text-link__first-words\">Global </span>",
+          "target": [
+            "a[href$=\"www.handelsbanken.com\"] > span:nth-child(1) > .shb-text-link__first-words"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005fa5",
+                "bgColor": "#043b62",
+                "contrastRatio": 1.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"shb-sepu-app-sub-footer\">",
+                  "target": [
+                    ".shb-sepu-app-sub-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"shb-text-link__last-word--without-icon\">startsida</span>",
+          "target": [
+            "a[href$=\"www.handelsbanken.com\"] > span:nth-child(1) > .shb-text-link__last-word.css-jw5wnz > .shb-text-link__last-word--without-icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005fa5",
+                "bgColor": "#043b62",
+                "contrastRatio": 1.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"shb-sepu-app-sub-footer\">",
+                  "target": [
+                    ".shb-sepu-app-sub-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"shb-text-link__last-word--without-icon\">Danmark</span>",
+          "target": [
+            "a[href$=\"www.handelsbanken.dk\"] > span:nth-child(1) > .shb-text-link__last-word.css-jw5wnz > .shb-text-link__last-word--without-icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005fa5",
+                "bgColor": "#043b62",
+                "contrastRatio": 1.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"shb-sepu-app-sub-footer\">",
+                  "target": [
+                    ".shb-sepu-app-sub-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"shb-text-link__last-word--without-icon\">Finland</span>",
+          "target": [
+            "a[href$=\"www.handelsbanken.fi\"] > span:nth-child(1) > .shb-text-link__last-word.css-jw5wnz > .shb-text-link__last-word--without-icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005fa5",
+                "bgColor": "#043b62",
+                "contrastRatio": 1.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"shb-sepu-app-sub-footer\">",
+                  "target": [
+                    ".shb-sepu-app-sub-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"shb-text-link__last-word--without-icon\">Nederländerna</span>",
+          "target": [
+            "a[href$=\"www.handelsbanken.nl\"] > span:nth-child(1) > .shb-text-link__last-word.css-jw5wnz > .shb-text-link__last-word--without-icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005fa5",
+                "bgColor": "#043b62",
+                "contrastRatio": 1.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"shb-sepu-app-sub-footer\">",
+                  "target": [
+                    ".shb-sepu-app-sub-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"shb-text-link__last-word--without-icon\">Norge</span>",
+          "target": [
+            "a[href$=\"www.handelsbanken.no\"] > span:nth-child(1) > .shb-text-link__last-word.css-jw5wnz > .shb-text-link__last-word--without-icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005fa5",
+                "bgColor": "#043b62",
+                "contrastRatio": 1.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"shb-sepu-app-sub-footer\">",
+                  "target": [
+                    ".shb-sepu-app-sub-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"shb-text-link__last-word--without-icon\">Storbritannien</span>",
+          "target": [
+            ".shb-sepu-app-sub-footer__links-list-item:nth-child(6) > .css-1fy1q0q[rel=\"noopener\"][target=\"_blank\"] > span:nth-child(1) > .shb-text-link__last-word.css-jw5wnz > .shb-text-link__last-word--without-icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #005fa5, background color: #043b62, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "ACT"
+      ],
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/color-contrast?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#222222",
+                "contrastRatio": 0,
+                "fontSize": "31.5pt (42px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"shb-cms-hero__content shb-cms-hero__type--panel shb-cms-hero__layout--left\">",
+                  "target": [
+                    ".shb-cms-hero__content"
+                  ]
+                },
+                {
+                  "html": "<img data-test-id=\"shb-hero-image-large\" class=\"shb-cms-hero__image--large shb-cms-hero__image\" src=\"/tron/public/info/contents/v1/image/32-152072?variantId=1800\" alt=\"Family  - Handelsbaken.se\" srcset=\"/tron/public/info/contents/v1/image/32-152072 1900w,/tron/public/info/contents/v1/image/32-152072?variantId=1200 1200w,/tron/public/info/contents/v1/image/32-152072?variantId=900 900w,/tron/public/info/contents/v1/image/32-152072?variantId=700 700w,/tron/public/info/contents/v1/image/32-152072?variantId=500 500w,/tron/public/info/contents/v1/image/32-152072?variantId=300 300w\" loading=\"eager\" width=\"1900\" height=\"460\" fetchpriority=\"high\">",
+                  "target": [
+                    ".shb-cms-hero__image--large"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h1 class=\"shb-cms-hero-content__headline\" data-test-id=\"shb-hero-headline\">Kan du få bättre bolåneränta hos oss? </h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#222222",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"shb-cms-hero__content shb-cms-hero__type--panel shb-cms-hero__layout--left\">",
+                  "target": [
+                    ".shb-cms-hero__content"
+                  ]
+                },
+                {
+                  "html": "<img data-test-id=\"shb-hero-image-large\" class=\"shb-cms-hero__image--large shb-cms-hero__image\" src=\"/tron/public/info/contents/v1/image/32-152072?variantId=1800\" alt=\"Family  - Handelsbaken.se\" srcset=\"/tron/public/info/contents/v1/image/32-152072 1900w,/tron/public/info/contents/v1/image/32-152072?variantId=1200 1200w,/tron/public/info/contents/v1/image/32-152072?variantId=900 900w,/tron/public/info/contents/v1/image/32-152072?variantId=700 700w,/tron/public/info/contents/v1/image/32-152072?variantId=500 500w,/tron/public/info/contents/v1/image/32-152072?variantId=300 300w\" loading=\"eager\" width=\"1900\" height=\"460\" fetchpriority=\"high\">",
+                  "target": [
+                    ".shb-cms-hero__image--large"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"shb-ingress-2 shb-cms-hero-content__tagline\" data-test-id=\"shb-hero-tagline\">\n                 Ta reda på om du kan få bättre bolåneränta och villkor hos oss. Ansök snabbt och enkelt online utan att du förbinder dig till något.\n                </div>",
+          "target": [
+            ".shb-ingress-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#222222",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>",
+          "target": [
+            "#\\31 59948 > div > .shb-cms-article-12.shb-cms-richtext > .shb-cms-article__container > .shb-cms-article__contents.row--cms.clearfix > .col-md-8.col-xs-12 > div > .js-shb-block.shb-text > .shb-cms-contentstack__paragraph > .shb-cms-contentstack__text.shb-text > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+        }
+      ]
+    }
+  ]
+}

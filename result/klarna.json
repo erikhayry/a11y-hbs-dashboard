@@ -1,0 +1,532 @@
+{
+  "name": "klarna",
+  "url": "http://www.klarna.se",
+  "result": {
+    "numberOfViolations": 4,
+    "numberOfIncomplete": 1
+  },
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "ACT"
+      ],
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/color-contrast?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#787573",
+                "bgColor": "#ffe6cc",
+                "contrastRatio": 3.79,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"sc-34e42c3e-0 idgupA\">",
+                  "target": [
+                    ".beLYZM > .sc-34e42c3e-0.idgupA"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.79 (foreground color: #787573, background color: #ffe6cc, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"sc-34e99b6e-0 dUgvce\">För företag</span>",
+          "target": [
+            ".beLYZM > .sc-34e42c3e-0.idgupA > .sc-34e42c3e-1.bpCdgT > .sc-34e42c3e-2.iAldBh:nth-child(2) > .fJqBng.sc-8dbfc4b6-0.sc-d725c4ab-0 > .dUgvce.sc-34e99b6e-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #787573, background color: #ffe6cc, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "duplicate-id",
+      "impact": "minor",
+      "tags": [
+        "cat.parsing",
+        "wcag2a",
+        "wcag411"
+      ],
+      "description": "Ensures every id attribute value is unique",
+      "help": "id attribute value must be unique",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/duplicate-id?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "clip0_167_34294",
+              "relatedNodes": [
+                {
+                  "html": "<clipPath id=\"clip0_167_34294\"><rect width=\"20\" height=\"20\" fill=\"white\" transform=\"translate(0.199951 0.5)\"></rect></clipPath>",
+                  "target": [
+                    "a[href$=\"fr-be/\"] > .sc-c97112fa-2.dzSyMZ > svg[width=\"21\"][viewBox=\"0 0 21 21\"][height=\"21\"] > defs > clippath"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: clip0_167_34294"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<clipPath id=\"clip0_167_34294\"><rect width=\"20\" height=\"20\" fill=\"white\" transform=\"translate(0.199951 0.5)\"></rect></clipPath>",
+          "target": [
+            ".language.view-column.sc-72a93780-6:nth-child(4) > a[href$=\"be/\"] > .sc-c97112fa-2.dzSyMZ > svg[width=\"21\"][viewBox=\"0 0 21 21\"][height=\"21\"] > defs > clippath"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: clip0_167_34294"
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "clip0_167_34408",
+              "relatedNodes": [
+                {
+                  "html": "<clipPath id=\"clip0_167_34408\"><rect width=\"20\" height=\"20\" fill=\"white\" transform=\"translate(0.399902 0.5)\"></rect></clipPath>",
+                  "target": [
+                    "a[href$=\"fr-ca/\"] > .sc-c97112fa-2.dzSyMZ > svg[width=\"21\"][viewBox=\"0 0 21 21\"][height=\"21\"] > defs > clippath"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: clip0_167_34408"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<clipPath id=\"clip0_167_34408\"><rect width=\"20\" height=\"20\" fill=\"white\" transform=\"translate(0.399902 0.5)\"></rect></clipPath>",
+          "target": [
+            ".language.view-column.sc-72a93780-6:nth-child(6) > a[href$=\"ca/\"] > .sc-c97112fa-2.dzSyMZ > svg[width=\"21\"][viewBox=\"0 0 21 21\"][height=\"21\"] > defs > clippath"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: clip0_167_34408"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensures the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/heading-order?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order invalid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<h3 class=\"sc-kDDrLX bxLCIc\">Köp det du älskar med Klarna. Det är precis som shopping ska vara – enkelt, säkert och roligt.</h3>",
+          "target": [
+            "h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order invalid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<h6 class=\"sc-iqcoie cCWPRr\">En app i världsklass</h6>",
+          "target": [
+            ".iIBxaC.sc-ZyCDH.hIJSZ:nth-child(1) > .hBMgKe.sc-idiyUo[on=\"\"] > .sc-dwLEzm.bImJtR > .sc-dwLEzm.bImJtR > h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/image-redundant-alt?application=webdriverio",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"RIMOWA\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" decoding=\"async\" data-nimg=\"responsive\" class=\"sc-dIouRR gtmhjP\" style=\"position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover\">",
+          "target": [
+            "img[alt=\"RIMOWA\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"Tommy Hilfiger\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" decoding=\"async\" data-nimg=\"responsive\" class=\"sc-dIouRR gtmhjP\" style=\"position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover\">",
+          "target": [
+            "img[alt=\"Tommy Hilfiger\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"Calvin Klein\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" decoding=\"async\" data-nimg=\"responsive\" class=\"sc-dIouRR gtmhjP\" style=\"position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover\">",
+          "target": [
+            "img[alt=\"Calvin Klein\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"hugo boss\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" decoding=\"async\" data-nimg=\"responsive\" class=\"sc-dIouRR gtmhjP\" style=\"position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover\">",
+          "target": [
+            "img[alt=\"hugo boss\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"8848 Altitude\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" decoding=\"async\" data-nimg=\"responsive\" class=\"sc-dIouRR gtmhjP\" style=\"position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover\">",
+          "target": [
+            "img[alt=\"8848 Altitude\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "ACT"
+      ],
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/color-contrast?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0e0e0f",
+                "contrastRatio": 0,
+                "fontSize": "30.8pt (41px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"sc-kgflAQ gZkxJJ sc-kLLXSd lnBAQ grid-product-features-1-717-6\" id=\"grid-product-features-1-717-6\" data-bg=\"default\">",
+                  "target": [
+                    "#grid-product-features-1-717-6"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h3 class=\"sc-kDDrLX bxLCIc\">Köp det du älskar med Klarna. Det är precis som shopping ska vara – enkelt, säkert och roligt.</h3>",
+          "target": [
+            "h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"sc-1ab2db06-2 fCdVJk\">",
+                  "target": [
+                    ".sc-1ab2db06-2.fCdVJk:nth-child(2)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"sc-34e99b6e-0 kfDRwO\">Copyright © 2005-2023 Klarna Bank AB (publ). Headquarters: Stockholm, Sweden. All rights reserved. Klarna Bank AB (publ). Sveavägen 46, 111 34 Stockholm. Organization number: 556737-0431</p>",
+          "target": [
+            ".kfDRwO"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"sc-1ab2db06-2 fCdVJk\">",
+                  "target": [
+                    ".sc-1ab2db06-2.fCdVJk:nth-child(2)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"sc-34e99b6e-0 iltVbJ\">Dataskydd</span>",
+          "target": [
+            ".sc-1ab2db06-8.fSUutK:nth-child(1) > .sc-1ab2db06-11.csdOuI.fJqBng > .iltVbJ.sc-34e99b6e-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"sc-1ab2db06-2 fCdVJk\">",
+                  "target": [
+                    ".sc-1ab2db06-2.fCdVJk:nth-child(2)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"sc-34e99b6e-0 iltVbJ\">Villkor</span>",
+          "target": [
+            ".sc-1ab2db06-8.fSUutK:nth-child(2) > .sc-1ab2db06-11.csdOuI.fJqBng > .iltVbJ.sc-34e99b6e-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"sc-1ab2db06-2 fCdVJk\">",
+                  "target": [
+                    ".sc-1ab2db06-2.fCdVJk:nth-child(2)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"sc-34e99b6e-0 iltVbJ\">Cookies</span>",
+          "target": [
+            ".sc-1ab2db06-8.fSUutK:nth-child(3) > .sc-1ab2db06-11.csdOuI.fJqBng > .iltVbJ.sc-34e99b6e-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"sc-1ab2db06-2 fCdVJk\">",
+                  "target": [
+                    ".sc-1ab2db06-2.fCdVJk:nth-child(2)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"sc-34e99b6e-0 iltVbJ\">Sajtkarta</span>",
+          "target": [
+            ".sc-1ab2db06-8.fSUutK:nth-child(4) > .sc-1ab2db06-11.csdOuI[target=\"_top\"] > .iltVbJ.sc-34e99b6e-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"sc-1ab2db06-2 fCdVJk\">",
+                  "target": [
+                    ".sc-1ab2db06-2.fCdVJk:nth-child(2)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"sc-34e99b6e-0 iltVbJ\">Klarna.com</span>",
+          "target": [
+            "a[href$=\"klarna.com/\"] > .iltVbJ.sc-34e99b6e-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        }
+      ]
+    }
+  ]
+}

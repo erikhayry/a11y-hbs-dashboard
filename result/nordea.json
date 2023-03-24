@@ -1,0 +1,1379 @@
+{
+  "name": "nordea",
+  "url": "http://www.nordea.se",
+  "result": {
+    "numberOfViolations": 3,
+    "numberOfIncomplete": 1
+  },
+  "violations": [
+    {
+      "id": "duplicate-id",
+      "impact": "minor",
+      "tags": [
+        "cat.parsing",
+        "wcag2a",
+        "wcag411"
+      ],
+      "description": "Ensures every id attribute value is unique",
+      "help": "id attribute value must be unique",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/duplicate-id?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "Layer_1",
+              "relatedNodes": [
+                {
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" id=\"Layer_1\" x=\"0px\" y=\"0px\" viewBox=\"0 0 136.1 28.6\" style=\"enable-background:new 0 0 136.1 28.6;\" xml:space=\"preserve\" class=\"injected-svg\" aria-label=\"Nordea logo\" focusable=\"false\">",
+                  "target": [
+                    ".nav-mobile__top.hide-for-large > .logo > a[href=\"/\"] > .injected-svg[aria-label=\"Nordea logo\"][version=\"1.1\"]"
+                  ]
+                },
+                {
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" id=\"Layer_1\" x=\"0px\" y=\"0px\" viewBox=\"0 0 136.1 28.6\" style=\"enable-background:new 0 0 136.1 28.6;\" xml:space=\"preserve\" class=\"injected-svg\">",
+                  "target": [
+                    "nav > .nav-mobile__top.hide-for-large > .logo > a[href=\"/\"] > .injected-svg[version=\"1.1\"][x=\"0px\"]"
+                  ]
+                },
+                {
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" id=\"Layer_1\" x=\"0px\" y=\"0px\" viewBox=\"0 0 136.1 28.6\" style=\"enable-background:new 0 0 136.1 28.6;\" xml:space=\"preserve\" class=\"injected-svg\">",
+                  "target": [
+                    ".search > .nav-mobile__top.hide-for-large > .logo > a[href=\"/\"] > .injected-svg[version=\"1.1\"][x=\"0px\"]"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: Layer_1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" id=\"Layer_1\" x=\"0px\" y=\"0px\" viewBox=\"0 0 136.1 28.6\" style=\"enable-background:new 0 0 136.1 28.6;\" xml:space=\"preserve\" class=\"injected-svg\" aria-label=\"Nordea logo\" focusable=\"false\">",
+          "target": [
+            ".nav-bar-wrapper > .logo > a[href=\"/\"] > .injected-svg[aria-label=\"Nordea logo\"][version=\"1.1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: Layer_1"
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "Lager_1",
+              "relatedNodes": [
+                {
+                  "html": "<g id=\"Lager_1\">",
+                  "target": [
+                    ".nav-mobile__top.hide-for-large > .logo > a[href=\"/\"] > .injected-svg[aria-label=\"Nordea logo\"][version=\"1.1\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Lager_1\">",
+                  "target": [
+                    "nav > .nav-mobile__top.hide-for-large > .logo > a[href=\"/\"] > .injected-svg[version=\"1.1\"][x=\"0px\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Lager_1\">",
+                  "target": [
+                    ".search > .nav-mobile__top.hide-for-large > .logo > a[href=\"/\"] > .injected-svg[version=\"1.1\"][x=\"0px\"] > g"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: Lager_1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<g id=\"Lager_1\">",
+          "target": [
+            ".nav-bar-wrapper > .logo > a[href=\"/\"] > .injected-svg[aria-label=\"Nordea logo\"][version=\"1.1\"] > g"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: Lager_1"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "description": "Ensures all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/region?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<a href=\"https://internetbanken.privat.nordea.se/nsp/login\" class=\"skip-to-content-link\">Gamla Internetbanken</a>",
+          "target": [
+            ".skip-to-content-link:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<a href=\"https://corporate.nordea.se/#!/\" class=\"skip-to-content-link\">Nordea Business</a>",
+          "target": [
+            ".skip-to-content-link:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div class=\"site-sections show-for-large\"><ul class=\"reset-list\"><li><a class=\"active\" href=\"/\" aria-current=\"location\">Privat</a></li><li><a href=\"/foretag/\">Företag</a></li><li><a href=\"/private-banking/\">Private Banking</a></li></ul></div>",
+          "target": [
+            ".site-sections.show-for-large"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "select-name",
+      "impact": "critical",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "ACT"
+      ],
+      "description": "Ensures select element has an accessible name",
+      "help": "Select element must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/select-name?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Form element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Form element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select style=\"width: 129.172px;\">",
+          "target": [
+            "select"
+          ],
+          "failureSummary": "Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "ACT"
+      ],
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/color-contrast?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a6d1ff",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"active\" href=\"/\" aria-current=\"location\">Privat</a>",
+          "target": [
+            "a[aria-current=\"location\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#fcfcfc",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/foretag/\">Företag</a>",
+          "target": [
+            ".site-sections.show-for-large > .reset-list > li:nth-child(2) > a[href$=\"foretag/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Ditt liv</span>",
+          "target": [
+            "a[href$=\"#Ditt liv\"] > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Våra tjänster</span>",
+          "target": [
+            "a[href$=\"#Våra tjänster\"] > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"\" href=\"/privat/kundservice/\" target=\"_self\" tabindex=\"0\">Kundservice<!-- --> <!-- --> </a>",
+          "target": [
+            "li[data-navigation-id-1=\"/kundservice\"] > a[href$=\"kundservice/\"][target=\"_self\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"nav-bottom\">",
+                  "target": [
+                    ".nav-bottom"
+                  ]
+                },
+                {
+                  "html": "<img src=\"/Images/154-465278/stage-large.jpg\" alt=\"\" data-mobile-url=\"/Images/154-465346/stage-small.jpg\" data-mobile-alt=\"\" data-fx-jumbotron-img--pull-right=\"\" style=\"width: 100%; height: auto; left: 0px; top: -9px; right: 0px;\">",
+                  "target": [
+                    ".jumbotron--pull-up-content > .jumbotron__background.hero-banner-frontpage__jumbotron__background[data-fx-parallax=\"\"] > picture > img[data-mobile-alt=\"\"][data-fx-jumbotron-img--pull-right=\"\"][alt=\"\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"\" href=\"/privat/bli-bankkund/\" target=\"_self\" tabindex=\"0\">Bli kund<!-- --> <!-- --> </a>",
+          "target": [
+            "li[data-navigation-id-1=\"/bli-bankkund\"] > a[href$=\"bli-bankkund/\"][target=\"_self\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#fcfcfc",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h1 class=\"trumpet\">      Privat  </h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#fcfcfc",
+                "contrastRatio": 0,
+                "fontSize": "30.0pt (40px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"h1 hero-banner-frontpage__headline\">Vad är ditt nästa steg?</h2>",
+          "target": [
+            ".jumbotron--pull-up-content > .jumbotron__content.jumbotron__content--dark > .row > .medium-8.columns > .hero-banner-frontpage__headline.h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#fcfcfc",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"medium-h5 hero-banner-frontpage__content\">Med ett lånelöfte blir du redo oavsett hur bostadsmarknaden ser ut. Vi guidar dig till ett bolån du känner dig hemma med.</p>",
+          "target": [
+            ".jumbotron--pull-up-content > .jumbotron__content.jumbotron__content--dark > .row > .medium-8.columns > .medium-h5.hero-banner-frontpage__content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"button button--green \" href=\"/privat/produkter/bolan/ansokan-lanelofte.html\" target=\"_self\" data-wa-promotion-id=\"wfhszihb97\">     Ansök om lånelöfte  </a>",
+          "target": [
+            "a[data-wa-promotion-id=\"wfhszihb97\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"button button--light-blue \" href=\"/privat/produkter/bolan/lanelofte.html\" target=\"_self\" data-wa-promotion-id=\"vd87djrmux\">     Läs mer om lånelöfte  </a>",
+          "target": [
+            "a[data-wa-promotion-id=\"vd87djrmux\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"trumpet highlighted-tool__label\">Kalkyl för bolån</p>",
+          "target": [
+            "a[data-wa-promotion-id=\"9648217347\"] > .highlighted-tool__label.trumpet"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#fcfcfc",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"highlighted-tool__headline h6\">Se hur mycket du kan låna </h2>",
+          "target": [
+            "a[data-wa-promotion-id=\"9648217347\"] > .highlighted-tool__wrapper > .highlighted-tool__content > .highlighted-tool__headline.h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"trumpet highlighted-tool__label\">Lånelöfte</p>",
+          "target": [
+            "a[data-wa-promotion-id=\"3144986024\"] > .highlighted-tool__label.trumpet"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#fcfcfc",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"highlighted-tool__headline h6\">Skaffa lånelöfte </h2>",
+          "target": [
+            "a[data-wa-promotion-id=\"3144986024\"] > .highlighted-tool__wrapper > .highlighted-tool__content > .highlighted-tool__headline.h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"trumpet highlighted-tool__label\">Kalkyl för privatlån</p>",
+          "target": [
+            "a[data-wa-promotion-id=\"5845037188\"] > .highlighted-tool__label.trumpet"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#fcfcfc",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"highlighted-tool__headline h6\">Räkna ut kostnaden för ett privatlån </h2>",
+          "target": [
+            "a[data-wa-promotion-id=\"5845037188\"] > .highlighted-tool__wrapper > .highlighted-tool__content > .highlighted-tool__headline.h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"trumpet highlighted-tool__label\">Kalkyl för månadssparande</p>",
+          "target": [
+            "a[data-wa-promotion-id=\"7262767300\"] > .highlighted-tool__label.trumpet"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#fcfcfc",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"highlighted-tool__headline h6\">Räkna på hur ditt sparande kan växa </h2>",
+          "target": [
+            "a[data-wa-promotion-id=\"7262767300\"] > .highlighted-tool__wrapper > .highlighted-tool__content > .highlighted-tool__headline.h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"trumpet\">Identifiera dig säkert digitalt</p>",
+          "target": [
+            "a[data-wa-promotion-id=\"6598706371\"] > .trumpet"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"trumpet\">Prognoser, expertkommentarer och tips</p>",
+          "target": [
+            "a[data-wa-promotion-id=\"d53i1emucb\"] > .trumpet"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"trumpet\">Inloggningen till gamla internetbanken stängd</p>",
+          "target": [
+            "a[data-wa-promotion-id=\"t69eff4p1t\"] > .trumpet"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"iconic-label__text\">Skaffa eller förnya Mobilt BankID </p>",
+          "target": [
+            "div[data-compid=\"154-228187\"] > .iconic-label.iconic-label--deep-blue[target=\"_self\"] > .iconic-label__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"iconic-label__text\">Fondkurser </p>",
+          "target": [
+            "div[data-compid=\"154-220336\"] > .iconic-label.iconic-label--deep-blue[target=\"_self\"] > .iconic-label__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"iconic-label__text\">Aktuella priser och räntor </p>",
+          "target": [
+            "div[data-compid=\"154-228183\"] > .iconic-label.iconic-label--deep-blue[target=\"_self\"] > .iconic-label__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"iconic-label__text\">Valutakurser </p>",
+          "target": [
+            "div[data-compid=\"154-220513\"] > .iconic-label.iconic-label--deep-blue[rel=\"noopener\"] > .iconic-label__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"iconic-label__text\">Spärra kort och BankID </p>",
+          "target": [
+            "div[data-compid=\"154-231412\"] > .iconic-label.iconic-label--deep-blue[rel=\"nofollow\"] > .iconic-label__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"iconic-label__text\">Säkra kortköp på internet </p>",
+          "target": [
+            "div[data-compid=\"154-232422\"] > .iconic-label.iconic-label--deep-blue[target=\"_self\"] > .iconic-label__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"iconic-label__text\">Därför ställer banken frågor </p>",
+          "target": [
+            "div[data-compid=\"154-330081\"] > .iconic-label.iconic-label--deep-blue[target=\"_self\"] > .iconic-label__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#fcfcfc",
+                "contrastRatio": 0,
+                "fontSize": "30.0pt (40px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"h1 hero-banner-frontpage__headline\">Ingen uppläggningsavgift på Privatlån fram till och med 30 april</h2>",
+          "target": [
+            ".hero-banner > .jumbotron__content.jumbotron__content--dark > .row > .medium-8.columns > .hero-banner-frontpage__headline.h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#fcfcfc",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"medium-h5 hero-banner-frontpage__content\">",
+          "target": [
+            ".hero-banner > .jumbotron__content.jumbotron__content--dark > .row > .medium-8.columns > .medium-h5.hero-banner-frontpage__content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"button button--light-blue \" href=\"/privat/produkter/lan/privatlan.html\" target=\"_self\" data-wa-promotion-id=\"502wekuhn1\">     Räkna på Privatlån  </a>",
+          "target": [
+            "a[data-wa-promotion-id=\"502wekuhn1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"button button--green \" href=\"https://nccl.nordea.se/#/auth\" target=\"_blank\" rel=\"noopener\" data-wa-promotion-id=\"2hg698qzfc\">     Ansök om Privatlån  <span class=\"visually-hidden\" data-nosnippet=\"\">Öppnas i nytt fönster</span></a>",
+          "target": [
+            "a[href$=\"/#/auth\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"trumpet\">Till dig som får elstöd</p>",
+          "target": [
+            "a[data-wa-promotion-id=\"28pl61j1dl\"] > .trumpet"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"trumpet\">Nu kan du få upp till 3,40&nbsp;% i sparränta</p>",
+          "target": [
+            "a[data-wa-promotion-id=\"2v2qiicapa\"] > .trumpet"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#00005e",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"trumpet\">Kundservice</p>",
+          "target": [
+            "a[data-wa-promotion-id=\"6714000188\"] > .trumpet"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>För att ge dig en bättre upplevelse av våra sidor, analysera webb-trafiken, anpassa innehåll och visa riktad marknadsföring använder vi cookies, både våra egna och från externa samarbetsparter.</p>",
+          "target": [
+            "#CookieReportsBannerDescription > p:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>",
+          "target": [
+            "#CookieReportsBannerDescription > p:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div id=\"CookieReportsBanner\" lang=\"sv-se\" data-nosnippet=\"true\" aria-live=\"off\" aria-modal=\"true\" role=\"dialog\" aria-labelledby=\"CookieReportsBannerHeading\" aria-describedby=\"CookieReportsBannerDescription\" style=\"z-index: 32002; position: absolute; top: 0px; bottom: auto; max-height: unset; opacity: 0.955702;\">",
+                  "target": [
+                    "#CookieReportsBanner"
+                  ]
+                },
+                {
+                  "html": "<img src=\"/Images/154-465278/stage-large.jpg\" alt=\"\" data-mobile-url=\"/Images/154-465346/stage-small.jpg\" data-mobile-alt=\"\" data-fx-jumbotron-img--pull-right=\"\" style=\"width: 100%; height: auto; left: 0px; top: -9px; right: 0px;\">",
+                  "target": [
+                    ".jumbotron--pull-up-content > .jumbotron__background.hero-banner-frontpage__jumbotron__background[data-fx-parallax=\"\"] > picture > img[data-mobile-alt=\"\"][data-fx-jumbotron-img--pull-right=\"\"][alt=\"\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>Läs mer om <a href=\"https://www.nordea.se/privat/cookies.html\" rel=\"noopener noreferrer\" target=\"_self\">cookies </a> och <a href=\"https://www.nordea.com/sv/dataskyddspolicy\" rel=\"noopener noreferrer\" target=\"_self\">hur vi behandlar personuppgifter </a>.</p>",
+          "target": [
+            "#CookieReportsBannerDescription > p:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div id=\"CookieReportsBanner\" lang=\"sv-se\" data-nosnippet=\"true\" aria-live=\"off\" aria-modal=\"true\" role=\"dialog\" aria-labelledby=\"CookieReportsBannerHeading\" aria-describedby=\"CookieReportsBannerDescription\" style=\"z-index: 32002; position: absolute; top: 0px; bottom: auto; max-height: unset; opacity: 0.955702;\">",
+                  "target": [
+                    "#CookieReportsBanner"
+                  ]
+                },
+                {
+                  "html": "<img src=\"/Images/154-465278/stage-large.jpg\" alt=\"\" data-mobile-url=\"/Images/154-465346/stage-small.jpg\" data-mobile-alt=\"\" data-fx-jumbotron-img--pull-right=\"\" style=\"width: 100%; height: auto; left: 0px; top: -9px; right: 0px;\">",
+                  "target": [
+                    ".jumbotron--pull-up-content > .jumbotron__background.hero-banner-frontpage__jumbotron__background[data-fx-parallax=\"\"] > picture > img[data-mobile-alt=\"\"][data-fx-jumbotron-img--pull-right=\"\"][alt=\"\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"https://www.nordea.se/privat/cookies.html\" rel=\"noopener noreferrer\" target=\"_self\">cookies </a>",
+          "target": [
+            "a[rel=\"noopener noreferrer\"][target=\"_self\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div id=\"CookieReportsBanner\" lang=\"sv-se\" data-nosnippet=\"true\" aria-live=\"off\" aria-modal=\"true\" role=\"dialog\" aria-labelledby=\"CookieReportsBannerHeading\" aria-describedby=\"CookieReportsBannerDescription\" style=\"z-index: 32002; position: absolute; top: 0px; bottom: auto; max-height: unset; opacity: 0.955702;\">",
+                  "target": [
+                    "#CookieReportsBanner"
+                  ]
+                },
+                {
+                  "html": "<img src=\"/Images/154-465278/stage-large.jpg\" alt=\"\" data-mobile-url=\"/Images/154-465346/stage-small.jpg\" data-mobile-alt=\"\" data-fx-jumbotron-img--pull-right=\"\" style=\"width: 100%; height: auto; left: 0px; top: -9px; right: 0px;\">",
+                  "target": [
+                    ".jumbotron--pull-up-content > .jumbotron__background.hero-banner-frontpage__jumbotron__background[data-fx-parallax=\"\"] > picture > img[data-mobile-alt=\"\"][data-fx-jumbotron-img--pull-right=\"\"][alt=\"\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"https://www.nordea.com/sv/dataskyddspolicy\" rel=\"noopener noreferrer\" target=\"_self\">hur vi behandlar personuppgifter </a>",
+          "target": [
+            "a[rel=\"noopener noreferrer\"][target=\"_self\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        }
+      ]
+    }
+  ]
+}

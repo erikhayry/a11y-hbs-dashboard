@@ -1,0 +1,1491 @@
+{
+  "name": "sbab",
+  "url": "http://www.sbab.se",
+  "result": {
+    "numberOfViolations": 4,
+    "numberOfIncomplete": 2
+  },
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "description": "Ensures role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/aria-allowed-role?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "aria-allowed-role",
+              "data": [
+                "navigation"
+              ],
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role navigation is not allowed for given element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<footer role=\"navigation\" class=\"sv-vertical sv-layout container-full bg-light-gray sv-skip-spacer sv-template-layout\" id=\"svid10_19872048170775ff0321493\">",
+          "target": [
+            "#svid10_19872048170775ff0321493"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role navigation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "duplicate-id",
+      "impact": "minor",
+      "tags": [
+        "cat.parsing",
+        "wcag2a",
+        "wcag411"
+      ],
+      "description": "Ensures every id attribute value is unique",
+      "help": "id attribute value must be unique",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/duplicate-id?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "Symbols",
+              "relatedNodes": [
+                {
+                  "html": "<g id=\"Symbols\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    "svg[width=\"29px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: Symbols"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<g id=\"Symbols\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+          "target": [
+            "svg[width=\"27px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: Symbols"
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "Background",
+              "relatedNodes": [
+                {
+                  "html": "<rect id=\"Background\" x=\"0\" y=\"0\" width=\"1280\" height=\"608\"></rect>",
+                  "target": [
+                    "svg[width=\"29px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g > rect[x=\"0\"][y=\"0\"][width=\"1280\"]"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: Background"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<rect id=\"Background\" x=\"0\" y=\"0\" width=\"1280\" height=\"608\"></rect>",
+          "target": [
+            "#Navigation\\/Desktop\\/Footer-Privat > rect[x=\"0\"][y=\"0\"][width=\"1280\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: Background"
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "Content",
+              "relatedNodes": [
+                {
+                  "html": "<g id=\"Content\" transform=\"translate(44.000000, 56.000000)\" fill=\"#1A1A1A\" fill-rule=\"nonzero\">",
+                  "target": [
+                    "svg[width=\"29px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g > g[fill=\"#1A1A1A\"][fill-rule=\"nonzero\"]"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: Content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<g id=\"Content\" transform=\"translate(44.000000, 56.000000)\" fill=\"#1A1A1A\" fill-rule=\"nonzero\">",
+          "target": [
+            "#Navigation\\/Desktop\\/Footer-Privat > g[fill=\"#1A1A1A\"][fill-rule=\"nonzero\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: Content"
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "Ladda-ner",
+              "relatedNodes": [
+                {
+                  "html": "<g id=\"Ladda-ner\" transform=\"translate(0.000000, 344.000000)\">",
+                  "target": [
+                    "svg[width=\"29px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g > g[fill=\"#1A1A1A\"][fill-rule=\"nonzero\"] > g"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: Ladda-ner"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<g id=\"Ladda-ner\" transform=\"translate(0.000000, 344.000000)\">",
+          "target": [
+            "#Navigation\\/Desktop\\/Footer-Privat > g[fill=\"#1A1A1A\"][fill-rule=\"nonzero\"] > g"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: Ladda-ner"
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "Group",
+              "relatedNodes": [
+                {
+                  "html": "<g id=\"Group\">",
+                  "target": [
+                    "#Google-play > g"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: Group"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<g id=\"Group\">",
+          "target": [
+            "#Apple-Store > g"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: Group"
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "logo",
+              "relatedNodes": [
+                {
+                  "html": "<path d=\"M-3.64153152e-13,29.8109721 L-3.64153152e-13,2.19224462 C-3.64153152e-13,1.22846475 0.558752451,0.395370208 1.3695982,0 L17.3457127,15.996897 L1.36317296,32 C0.555799437,31.6034276 -3.64153152e-13,30.7722663 -3.64153152e-13,29.8109721 Z M22.4141882,21.0717569 L4.94532507,31.1704634 L18.7225961,17.3753964 L22.4141882,21.0717569 Z M27.8441645,14.0653731 C28.4251944,14.5106845 28.8,15.2123626 28.8,16.0016084 C28.8,16.7789943 28.4365521,17.4712496 27.8704496,17.9173733 L24.1598738,20.0625361 L20.0993172,15.996897 L24.1571155,11.9338247 L27.8441645,14.0653731 Z M4.95556327,0.83351695 L22.4114299,10.9246689 L18.7225961,14.6182351 L4.95556327,0.83351695 Z\" id=\"logo\">",
+                  "target": [
+                    "#Google-play > g > path"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: logo"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<path d=\"M23.9275635,28.0271586 C22.5876576,29.9779088 21.201648,31.9166598 19.0133391,31.9572971 C16.8596885,31.9979344 16.1692629,30.6873016 13.7117477,30.6873016 C11.2516532,30.6873016 10.4820778,31.9166598 8.44866732,31.9979344 C6.33607471,32.0766491 4.72968672,29.8910346 3.37873845,27.9490838 C0.618793286,23.9784681 -1.48770591,16.7221511 1.34531184,11.825165 C2.74821532,9.39321483 5.26205431,7.85450124 7.98618052,7.81387994 C10.0608586,7.77586647 12.0207451,9.20641126 13.2879492,9.20641126 C14.5570878,9.20641126 16.9359367,7.48887758 19.4368152,7.74079681 C20.483657,7.78384994 23.4217136,8.16075286 25.3085759,10.9095299 C25.1594646,11.0071074 21.8016396,12.952002 21.8425847,17.0038923 C21.8836911,21.8440502 26.1028151,23.4529031 26.1518204,23.4748216 C26.1136156,23.5885741 25.4773537,25.7716288 23.9275635,28.0271586 Z M14.7395678,2.42379068 C15.8977998,1.07256861 17.8547847,0.0675315054 19.4698614,0 C19.6761992,1.87691508 18.9177467,3.75642199 17.7975582,5.11076385 C16.6751129,6.46267387 14.8377394,7.51578778 13.0345406,7.37517314 C12.7895145,5.53887936 13.698368,3.62377482 14.7395678,2.42379068 Z\" id=\"logo\">",
+          "target": [
+            "#Apple-Store > g > path"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: logo"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensures the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/heading-order?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order invalid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<h4 class=\"typography-h4\" id=\"h-Bolanutankrangel\">Bolån utan krångel</h4>",
+          "target": [
+            "#h-Bolanutankrangel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order invalid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<h3 class=\"typography-h3\" id=\"h-Hittabostad\">Hitta bostad</h3>",
+          "target": [
+            "#h-Hittabostad"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "help": "Ensures landmarks are unique",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/landmark-unique?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
+                "accessibleText": null
+              },
+              "relatedNodes": [
+                {
+                  "html": "<nav class=\"h-full container-content flex-grow\">",
+                  "target": [
+                    ".flex-grow"
+                  ]
+                },
+                {
+                  "html": "<footer role=\"navigation\" class=\"sv-vertical sv-layout container-full bg-light-gray sv-skip-spacer sv-template-layout\" id=\"svid10_19872048170775ff0321493\">",
+                  "target": [
+                    "#svid10_19872048170775ff0321493"
+                  ]
+                }
+              ],
+              "impact": "moderate",
+              "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<nav class=\"n-section container-content flex justify-end items-center\">",
+          "target": [
+            ".n-section"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "ACT"
+      ],
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/color-contrast?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"/1/privat/lana/privatlan/billan_till_bra_ranta.html\">Billån</a>",
+                  "target": [
+                    "#svid12_3fe57009176adaf0ff2fc > .sv-text-portlet-content > .typography-accent > a"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/privat/lana/privatlan/billan_till_bra_ranta.html\">Billån</a>",
+          "target": [
+            "#svid12_3fe57009176adaf0ff2fc > .sv-text-portlet-content > .typography-accent > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"text-accent-DSD-46 text-black font-normal font-sans mb-md text-left font-display block-DSD-120\">Bli kund</h2>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(1) > .text-accent-DSD-46.text-left.block-DSD-120"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/privat/lana/bolan/bolan_-_sa_funkar_det.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Bolån\n                                </a>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(1) > .p-0 > .mb-sm.list-none:nth-child(1) > .text-base-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/privat/lana/privatlan/privatlan_-_sa_funkar_det.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Privatlån\n                                </a>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(1) > .p-0 > .mb-sm.list-none:nth-child(2) > .text-base-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/privat/spara/sparkonto/vart_sparkonto.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Sparkonto\n                                </a>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(1) > .p-0 > .mb-sm.list-none:nth-child(3) > .text-base-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"text-accent-DSD-46 text-black font-normal font-sans mb-md text-left font-display block-DSD-120\">Kundservice</h2>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(2) > .text-accent-DSD-46.text-left.block-DSD-120"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/privat/kundservice.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Vanliga frågor och svar\n                                </a>",
+          "target": [
+            ".text-base-DSD-46.font-sans[href$=\"kundservice.html\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/privat/kundservice/service/ansoka_om_bolan/lanehandlingar_-_sa_fyller_du_i_dom.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Fyll i lånehandlingar\n                                </a>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(2) > .p-0 > .mb-sm.list-none:nth-child(2) > .text-base-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/om_sbab/tyck_till_om_sbab.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Tyck till om SBAB\n                                </a>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(2) > .p-0 > .mb-sm.list-none:nth-child(3) > .text-base-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/privat/kundservice/kontakt/kontakta_oss.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Kontakta oss\n                                </a>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(2) > .p-0 > .mb-sm.list-none:nth-child(4) > .text-base-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"text-accent-DSD-46 text-black font-normal font-sans mb-md text-left font-display block-DSD-120\">Företag &amp; Brf</h2>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(3) > .text-accent-DSD-46.text-left.block-DSD-120"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/foretag__bostadsrattsforeningar/lana/lan_hos_sbab/fastighetslan.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Fastighetslån\n                                </a>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(3) > .p-0 > .mb-sm.list-none:nth-child(1) > .text-base-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/foretag__bostadsrattsforeningar/lana/ombildning/fran_hyresratt_till_bostadsratt.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Ombildning\n                                </a>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(3) > .p-0 > .mb-sm.list-none:nth-child(2) > .text-base-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/foretag__bostadsrattsforeningar/lana/nyproduktion/fran_start_till_inflyttning.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Nyproduktion\n                                </a>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(3) > .p-0 > .mb-sm.list-none:nth-child(3) > .text-base-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"text-accent-DSD-46 text-black font-normal font-sans mb-md text-left font-display block-DSD-120\">Om SBAB</h2>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(4) > .text-accent-DSD-46.text-left.block-DSD-120"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/om_sbab.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Fakta om SBAB\n                                </a>",
+          "target": [
+            ".mb-sm.list-none:nth-child(1) > .text-base-DSD-46.font-sans[href$=\"om_sbab.html\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/om_sbab/hallbarhet.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Hållbarhet\n                                </a>",
+          "target": [
+            ".text-base-DSD-46.font-sans[href$=\"hallbarhet.html\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/om_sbab/press.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Press\n                                </a>",
+          "target": [
+            "a[href$=\"press.html\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/jobb/karriar.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Jobba hos oss\n                                </a>",
+          "target": [
+            "a[href$=\"karriar.html\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/om_sbab/investor_relations.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Investor Relations\n                                </a>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(4) > .p-0 > .mb-sm.list-none:nth-child(5) > .text-base-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/om_sbab/omvarld__analyser.html\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Omvärld &amp; analyser\n                                </a>",
+          "target": [
+            ".mb-sm.list-none:nth-child(6) > .text-base-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"text-accent-DSD-46 text-black font-normal font-sans mb-md text-left font-display block-DSD-120\">Våra tjänster</h2>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(5) > .text-accent-DSD-46.text-left.block-DSD-120"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"https://www.booli.se/\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Booli\n                                </a>",
+          "target": [
+            "a[href$=\"booli.se/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"https://pro.booli.se/auth/login\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Booli Pro\n                                </a>",
+          "target": [
+            ".col-2.md_col-4.sm_col-12:nth-child(5) > .p-0 > .mb-sm.list-none:nth-child(2) > .text-base-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"https://www.hittamaklare.se/\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Hittamäklare\n                                </a>",
+          "target": [
+            "a[href$=\"hittamaklare.se/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"https://boappa.se\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Boappa\n                                </a>",
+          "target": [
+            ".text-base-DSD-46.font-sans[href$=\"boappa.se\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"https://developer.sbab.se/\" class=\"text-base-DSD-46 text-black font-sans\">\n                                    Developer Portal\n                                </a>",
+          "target": [
+            "a[href$=\"developer.sbab.se/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"typography-base\">Ladda ner</p>",
+          "target": [
+            "#svid12_19872048170775ff032148c > .sv-text-portlet-content > .typography-base"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"text-paragraph underline\">\n  App Store \n</div>",
+          "target": [
+            ".pr-lg.items-center.flex > .text-paragraph.underline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"text-paragraph underline\">\n  Google Play \n</div>",
+          "target": [
+            ".pr-md > .text-paragraph.underline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/sidfotsmeny_2/penningtvatt.html\" class=\"text-fineprint-DSD-46 text-black font-sans\">\n                            Penningtvätt\n                        </a>",
+          "target": [
+            ".mr-sm.mb-sm.list-none:nth-child(1) > .text-fineprint-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/sidfotsmeny_2/insattningsgarantin.html\" class=\"text-fineprint-DSD-46 text-black font-sans\">\n                            Insättningsgarantin\n                        </a>",
+          "target": [
+            ".mr-sm.mb-sm.list-none:nth-child(2) > .text-fineprint-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/sidfotsmeny_2/behandling_av_personuppgifter.html\" class=\"text-fineprint-DSD-46 text-black font-sans\">\n                            Behandling av personuppgifter\n                        </a>",
+          "target": [
+            ".mr-sm.mb-sm.list-none:nth-child(3) > .text-fineprint-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/sidfotsmeny_2/cookies.html\" class=\"text-fineprint-DSD-46 text-black font-sans\">\n                            Cookies\n                        </a>",
+          "target": [
+            ".mr-sm.mb-sm.list-none:nth-child(4) > a[href$=\"cookies.html\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/sidfotsmeny_2/tekniska_krav.html\" class=\"text-fineprint-DSD-46 text-black font-sans\">\n                            Tekniska krav\n                        </a>",
+          "target": [
+            ".mr-sm.mb-sm.list-none:nth-child(5) > .text-fineprint-DSD-46.font-sans.text-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/sidfotsmeny_2/sakerhet.html\" class=\"text-fineprint-DSD-46 text-black font-sans\">\n                            Säkerhet\n                        </a>",
+          "target": [
+            "a[href$=\"sakerhet.html\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/1/in_english.html\" class=\"text-fineprint-DSD-46 text-black font-sans\">\n                            In English\n                        </a>",
+          "target": [
+            "a[href$=\"in_english.html\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"sm_block mr-sm mb-sm\">SBAB Bank AB (publ)</span>",
+          "target": [
+            ".sm_block.mr-sm"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"sm_block mb-sm\">Org nr. 556253-7513</span>",
+          "target": [
+            ".sm_mt-lg > .sm_block:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#101010",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"Paragraph-module_paragraph__1t9uD\">",
+          "target": [
+            ".Paragraph-module_paragraph__1t9uD:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+        }
+      ]
+    },
+    {
+      "id": "form-field-multiple-labels",
+      "impact": "moderate",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag332"
+      ],
+      "description": "Ensures form field does not have multiple label elements",
+      "help": "Form field must not have multiple label elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/form-field-multiple-labels?application=webdriverio",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "multiple-label",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<label for=\"include-green-mortgage-toggle\" class=\"Toggle_label__TJPRW\"></label>",
+                  "target": [
+                    ".Toggle_label__TJPRW"
+                  ]
+                },
+                {
+                  "html": "<label class=\"GreenMortgageToggle_label__pSp4a\" for=\"include-green-mortgage-toggle\">Räkna med Grönt Bolån</label>",
+                  "target": [
+                    ".GreenMortgageToggle_label__pSp4a"
+                  ]
+                }
+              ],
+              "impact": "moderate",
+              "message": "Multiple label elements is not widely supported in assistive technologies. Ensure the first label contains all necessary information."
+            }
+          ],
+          "impact": "moderate",
+          "html": "<input id=\"include-green-mortgage-toggle\" class=\"Toggle_input__xsv+I\" type=\"checkbox\">",
+          "target": [
+            "#include-green-mortgage-toggle"
+          ],
+          "failureSummary": "Fix all of the following:\n  Multiple label elements is not widely supported in assistive technologies. Ensure the first label contains all necessary information."
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "multiple-label",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<label for=\"estimatedPropertyValue\" class=\"_label_1ggby_1 _label--block_1ggby_8 _textfield__label_11lhy_6\">Uppskattat värde på bostaden</label>",
+                  "target": [
+                    "._label--block_1ggby_8._textfield__label_11lhy_6[for=\"estimatedPropertyValue\"]"
+                  ]
+                },
+                {
+                  "html": "<label for=\"estimatedPropertyValue\" class=\"_input-group__label_ca2q1_14\">kr</label>",
+                  "target": [
+                    "._input-group__label_ca2q1_14[for=\"estimatedPropertyValue\"]"
+                  ]
+                }
+              ],
+              "impact": "moderate",
+              "message": "Multiple label elements is not widely supported in assistive technologies. Ensure the first label contains all necessary information."
+            }
+          ],
+          "impact": "moderate",
+          "html": "<input id=\"estimatedPropertyValue\" name=\"estimatedPropertyValue\" type=\"tel\" class=\"_input_1qzjb_1 _input--block_1qzjb_32 _textfield__input_11lhy_12\" value=\"\">",
+          "target": [
+            "#estimatedPropertyValue"
+          ],
+          "failureSummary": "Fix all of the following:\n  Multiple label elements is not widely supported in assistive technologies. Ensure the first label contains all necessary information."
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "multiple-label",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<label for=\"loanAmount\" class=\"_label_1ggby_1 _label--block_1ggby_8 _textfield__label_11lhy_6\">Lånebelopp - max 85% av värdet</label>",
+                  "target": [
+                    "._label--block_1ggby_8._textfield__label_11lhy_6[for=\"loanAmount\"]"
+                  ]
+                },
+                {
+                  "html": "<label for=\"loanAmount\" class=\"_input-group__label_ca2q1_14\">kr</label>",
+                  "target": [
+                    "._input-group__label_ca2q1_14[for=\"loanAmount\"]"
+                  ]
+                },
+                {
+                  "html": "<label for=\"loanAmount\" class=\"_message_wmet9_1 _textfield__message_11lhy_16\">Belåningsgraden är 0%</label>",
+                  "target": [
+                    "._message_wmet9_1"
+                  ]
+                }
+              ],
+              "impact": "moderate",
+              "message": "Multiple label elements is not widely supported in assistive technologies. Ensure the first label contains all necessary information."
+            }
+          ],
+          "impact": "moderate",
+          "html": "<input id=\"loanAmount\" name=\"loanAmount\" type=\"tel\" class=\"_input_1qzjb_1 _input--block_1qzjb_32 _textfield__input_11lhy_12\" value=\"\">",
+          "target": [
+            "#loanAmount"
+          ],
+          "failureSummary": "Fix all of the following:\n  Multiple label elements is not widely supported in assistive technologies. Ensure the first label contains all necessary information."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2136 @@
+{
+  "name": "lansforsakringar",
+  "url": "http://www.lansforsakringar.se",
+  "result": {
+    "numberOfViolations": 7,
+    "numberOfIncomplete": 1
+  },
+  "violations": [
+    {
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ],
+      "description": "Ensures ARIA attributes are allowed for an element's role",
+      "help": "Elements must only use allowed ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/aria-allowed-attr?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "aria-allowed-attr",
+              "data": [
+                "aria-expanded=\"false\""
+              ],
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is not allowed: aria-expanded=\"false\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<div type=\"text\" class=\"custom-select-dd\" id=\"companySelection\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t<span>Stockholm</span>\n\t</div>",
+          "target": [
+            "#\\34 9585efc3bca4dcabaa170606dd56f4d-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "any": [
+            {
+              "id": "aria-allowed-attr",
+              "data": [
+                "aria-expanded=\"false\""
+              ],
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is not allowed: aria-expanded=\"false\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<div type=\"text\" class=\"custom-select-dd dropdown-toggle\" id=\"current-office\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\t\t\t\tKundcenter Stockholm\n\n\t\t\t\t\t\t</span>\n\t\t\t\t\t</div>",
+          "target": [
+            "#current-office"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "ACT"
+      ],
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/color-contrast?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#97bcd8",
+                "bgColor": "#ffffff",
+                "contrastRatio": 1.99,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"/privat/bank/lana/bolan/\" class=\"shortcut topimage-shortcut-item\" data-linktype=\"link_with_icon\" data-linktext=\"Räkna på bolån\">",
+                  "target": [
+                    ".link-with-icon.mb-component > a[href$=\"bolan/\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.99 (foreground color: #97bcd8, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h4 class=\"break-word\">Räkna på bolån</h4>",
+          "target": [
+            "a[href$=\"bolan/\"] > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.99 (foreground color: #97bcd8, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#97bcd8",
+                "bgColor": "#ffffff",
+                "contrastRatio": 1.99,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"/privat/bank/bli-bankkund/\" class=\"shortcut topimage-shortcut-item\" data-linktype=\"link_with_icon\" data-linktext=\"Bli bankkund\">",
+                  "target": [
+                    "a[data-linktext=\"Bli bankkund\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.99 (foreground color: #97bcd8, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h4 class=\"break-word\">Bli bankkund</h4>",
+          "target": [
+            "a[data-linktext=\"Bli bankkund\"] > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.99 (foreground color: #97bcd8, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#97bcd8",
+                "bgColor": "#ffffff",
+                "contrastRatio": 1.99,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"/privat/forsakring/bilforsakring/\" class=\"shortcut topimage-shortcut-item\" data-linktype=\"link_with_icon\" data-linktext=\"Köp bilförsäkring\">",
+                  "target": [
+                    "a[data-linktext=\"Köp bilförsäkring\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.99 (foreground color: #97bcd8, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h4 class=\"break-word\">Köp bilförsäkring</h4>",
+          "target": [
+            "a[data-linktext=\"Köp bilförsäkring\"] > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.99 (foreground color: #97bcd8, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#97bcd8",
+                "bgColor": "#ffffff",
+                "contrastRatio": 1.99,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"/privat/forsakring/hemforsakring/\" class=\"shortcut topimage-shortcut-item\" data-linktype=\"link_with_icon\" data-linktext=\"Köp hemförsäkring\">",
+                  "target": [
+                    "a[data-linktext=\"Köp hemförsäkring\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.99 (foreground color: #97bcd8, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h4 class=\"break-word\">Köp hemförsäkring</h4>",
+          "target": [
+            "a[data-linktext=\"Köp hemförsäkring\"] > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.99 (foreground color: #97bcd8, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#97bcd8",
+                "bgColor": "#ffffff",
+                "contrastRatio": 1.99,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"/privat/forsakring/skadeanmalan/\" class=\"shortcut topimage-shortcut-item\" data-linktype=\"link_with_icon\" data-linktext=\"Anmäl skada\">",
+                  "target": [
+                    "a[data-linktext=\"Anmäl skada\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.99 (foreground color: #97bcd8, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h4 class=\"break-word\">Anmäl skada</h4>",
+          "target": [
+            "a[data-linktext=\"Anmäl skada\"] > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.99 (foreground color: #97bcd8, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "duplicate-id-aria",
+      "impact": "critical",
+      "tags": [
+        "cat.parsing",
+        "wcag2a",
+        "wcag411"
+      ],
+      "description": "Ensures every id attribute value used in ARIA and in labels is unique",
+      "help": "IDs used in ARIA and labels must be unique",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/duplicate-id-aria?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "duplicate-id-aria",
+              "data": "companySelection",
+              "relatedNodes": [
+                {
+                  "html": "<div type=\"text\" class=\"custom-select-dd\" id=\"companySelection\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t<span>Stockholm</span>\n\t</div>",
+                  "target": [
+                    "#ac3c5a5372a048e7a407f840cb693401-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
+                  ]
+                },
+                {
+                  "html": "<div type=\"text\" class=\"custom-select-dd\" id=\"companySelection\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t<span>Stockholm</span>\n\t</div>",
+                  "target": [
+                    "#\\32 819ddf2aca34e1cb3341818fef283b2-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
+                  ]
+                },
+                {
+                  "html": "<div type=\"text\" class=\"custom-select-dd\" id=\"companySelection\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t<span>Välj</span>\n\t</div>",
+                  "target": [
+                    "#company-not-found-modal-select-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
+                  ]
+                }
+              ],
+              "impact": "critical",
+              "message": "Document has multiple elements referenced with ARIA with the same id attribute: companySelection"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<div type=\"text\" class=\"custom-select-dd\" id=\"companySelection\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t<span>Stockholm</span>\n\t</div>",
+          "target": [
+            "#\\34 9585efc3bca4dcabaa170606dd56f4d-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: companySelection"
+        }
+      ]
+    },
+    {
+      "id": "duplicate-id",
+      "impact": "minor",
+      "tags": [
+        "cat.parsing",
+        "wcag2a",
+        "wcag411"
+      ],
+      "description": "Ensures every id attribute value is unique",
+      "help": "id attribute value must be unique",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/duplicate-id?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "Page-1",
+              "relatedNodes": [
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".has-children[data-topic=\"Försäkring\"][href$=\"forsakring/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".has-children[data-topic=\"Försäkring\"][href$=\"forsakring/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    "a[data-topic=\"Alla hemförsäkringar\"][data-megamenucol=\"1\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Alla hemförsäkringar\"][data-megamenucol=\"1\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    "a[data-topic=\"Skadeanmälan\"][data-megamenucol=\"4\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Skadeanmälan\"][data-megamenucol=\"4\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    "a[data-topic=\"Alla fordonsförsäkringar\"][data-megamenucol=\"2\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Alla fordonsförsäkringar\"][data-megamenucol=\"2\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    "a[data-topic=\"Personförsäkring\"][data-megamenucol=\"3\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Personförsäkring\"][data-megamenucol=\"3\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    "a[data-topic=\"Förebygga skador\"][data-megamenucol=\"4\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Förebygga skador\"][data-megamenucol=\"4\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".has-children[data-topic=\"Bank\"][href$=\"bank/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".has-children[data-topic=\"Bank\"][href$=\"bank/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    "a[data-topic=\"Bli bankkund\"][data-megamenucol=\"1\"][data-area=\"Bank\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Bli bankkund\"][data-megamenucol=\"1\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    "a[href$=\"lana/\"][data-topic=\"Låna\"][data-megamenucol=\"2\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".navbar-toggle[href$=\"lana/\"][data-topic=\"Låna\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    "a[href$=\"spara/\"][data-topic=\"Spara\"][data-megamenucol=\"4\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".navbar-toggle[href$=\"spara/\"][data-topic=\"Spara\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    "a[data-topic=\"Kort & betalningar\"][data-megamenucol=\"3\"][data-area=\"Bank\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Kort & betalningar\"][data-megamenucol=\"3\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".has-children[data-topic=\"Pension\"][href$=\"pension/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".has-children[data-topic=\"Pension\"][href$=\"pension/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".has-children[data-topic=\"Om oss\"][href$=\"om-oss/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".has-children[data-topic=\"Om oss\"][href$=\"om-oss/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    "a[data-topic=\"Erbjudanden\"][data-megamenucol=\"1\"][data-area=\"Om oss\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Erbjudanden\"][data-megamenucol=\"1\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    "a[data-topic=\"Jobba hos oss\"][data-megamenucol=\"4\"][data-area=\"Om oss\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Jobba hos oss\"][data-megamenucol=\"4\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    "a[data-topic=\"Hållbarhet & forskning\"][data-megamenucol=\"2\"][data-area=\"Om oss\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                },
+                {
+                  "html": "<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Hållbarhet & forskning\"][data-megamenucol=\"2\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g > polygon"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: Page-1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<path d=\"M2,6 L2,8 L30,8 L30,6 L2,6 Z M2,15 L2,17 L30,17 L30,15 L2,15 Z M2,24 L2,26 L30,26 L30,24 L2,24 Z\" id=\"Page-1\"></path>",
+          "target": [
+            "#icon-menu-new > g[fill=\"currentColor\"][fill-rule=\"evenodd\"] > path"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: Page-1"
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "Öppna-sidor",
+              "relatedNodes": [
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".has-children[data-topic=\"Försäkring\"][href$=\"forsakring/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    "a[data-topic=\"Alla hemförsäkringar\"][data-megamenucol=\"1\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Alla hemförsäkringar\"][data-megamenucol=\"1\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    "a[data-topic=\"Skadeanmälan\"][data-megamenucol=\"4\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Skadeanmälan\"][data-megamenucol=\"4\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    "a[data-topic=\"Alla fordonsförsäkringar\"][data-megamenucol=\"2\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Alla fordonsförsäkringar\"][data-megamenucol=\"2\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    "a[data-topic=\"Personförsäkring\"][data-megamenucol=\"3\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Personförsäkring\"][data-megamenucol=\"3\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    "a[data-topic=\"Förebygga skador\"][data-megamenucol=\"4\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Förebygga skador\"][data-megamenucol=\"4\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".has-children[data-topic=\"Bank\"][href$=\"bank/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".has-children[data-topic=\"Bank\"][href$=\"bank/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    "a[data-topic=\"Bli bankkund\"][data-megamenucol=\"1\"][data-area=\"Bank\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Bli bankkund\"][data-megamenucol=\"1\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    "a[href$=\"lana/\"][data-topic=\"Låna\"][data-megamenucol=\"2\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".navbar-toggle[href$=\"lana/\"][data-topic=\"Låna\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    "a[href$=\"spara/\"][data-topic=\"Spara\"][data-megamenucol=\"4\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".navbar-toggle[href$=\"spara/\"][data-topic=\"Spara\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    "a[data-topic=\"Kort & betalningar\"][data-megamenucol=\"3\"][data-area=\"Bank\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Kort & betalningar\"][data-megamenucol=\"3\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".has-children[data-topic=\"Pension\"][href$=\"pension/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".has-children[data-topic=\"Pension\"][href$=\"pension/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".has-children[data-topic=\"Om oss\"][href$=\"om-oss/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".has-children[data-topic=\"Om oss\"][href$=\"om-oss/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    "a[data-topic=\"Erbjudanden\"][data-megamenucol=\"1\"][data-area=\"Om oss\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Erbjudanden\"][data-megamenucol=\"1\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    "a[data-topic=\"Jobba hos oss\"][data-megamenucol=\"4\"][data-area=\"Om oss\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Jobba hos oss\"][data-megamenucol=\"4\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    "a[data-topic=\"Hållbarhet & forskning\"][data-megamenucol=\"2\"][data-area=\"Om oss\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Hållbarhet & forskning\"][data-megamenucol=\"2\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: Öppna-sidor"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<g id=\"Öppna-sidor\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+          "target": [
+            ".has-children[data-topic=\"Försäkring\"][href$=\"forsakring/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: Öppna-sidor"
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "Home_desktop_responsive_alt",
+              "relatedNodes": [
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".has-children[data-topic=\"Försäkring\"][href$=\"forsakring/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    "a[data-topic=\"Alla hemförsäkringar\"][data-megamenucol=\"1\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Alla hemförsäkringar\"][data-megamenucol=\"1\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    "a[data-topic=\"Skadeanmälan\"][data-megamenucol=\"4\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Skadeanmälan\"][data-megamenucol=\"4\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    "a[data-topic=\"Alla fordonsförsäkringar\"][data-megamenucol=\"2\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Alla fordonsförsäkringar\"][data-megamenucol=\"2\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    "a[data-topic=\"Personförsäkring\"][data-megamenucol=\"3\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Personförsäkring\"][data-megamenucol=\"3\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    "a[data-topic=\"Förebygga skador\"][data-megamenucol=\"4\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Förebygga skador\"][data-megamenucol=\"4\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".has-children[data-topic=\"Bank\"][href$=\"bank/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".has-children[data-topic=\"Bank\"][href$=\"bank/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    "a[data-topic=\"Bli bankkund\"][data-megamenucol=\"1\"][data-area=\"Bank\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Bli bankkund\"][data-megamenucol=\"1\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    "a[href$=\"lana/\"][data-topic=\"Låna\"][data-megamenucol=\"2\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".navbar-toggle[href$=\"lana/\"][data-topic=\"Låna\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    "a[href$=\"spara/\"][data-topic=\"Spara\"][data-megamenucol=\"4\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".navbar-toggle[href$=\"spara/\"][data-topic=\"Spara\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    "a[data-topic=\"Kort & betalningar\"][data-megamenucol=\"3\"][data-area=\"Bank\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Kort & betalningar\"][data-megamenucol=\"3\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".has-children[data-topic=\"Pension\"][href$=\"pension/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".has-children[data-topic=\"Pension\"][href$=\"pension/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".has-children[data-topic=\"Om oss\"][href$=\"om-oss/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".has-children[data-topic=\"Om oss\"][href$=\"om-oss/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    "a[data-topic=\"Erbjudanden\"][data-megamenucol=\"1\"][data-area=\"Om oss\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Erbjudanden\"][data-megamenucol=\"1\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    "a[data-topic=\"Jobba hos oss\"][data-megamenucol=\"4\"][data-area=\"Om oss\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Jobba hos oss\"][data-megamenucol=\"4\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    "a[data-topic=\"Hållbarhet & forskning\"][data-megamenucol=\"2\"][data-area=\"Om oss\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Hållbarhet & forskning\"][data-megamenucol=\"2\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: Home_desktop_responsive_alt"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<g id=\"Home_desktop_responsive_alt\" transform=\"translate(-411.000000, -3055.000000)\" fill=\"#ffffff\">",
+          "target": [
+            ".has-children[data-topic=\"Försäkring\"][href$=\"forsakring/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: Home_desktop_responsive_alt"
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "Group-7",
+              "relatedNodes": [
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".has-children[data-topic=\"Försäkring\"][href$=\"forsakring/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    "a[data-topic=\"Alla hemförsäkringar\"][data-megamenucol=\"1\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Alla hemförsäkringar\"][data-megamenucol=\"1\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    "a[data-topic=\"Skadeanmälan\"][data-megamenucol=\"4\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Skadeanmälan\"][data-megamenucol=\"4\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    "a[data-topic=\"Alla fordonsförsäkringar\"][data-megamenucol=\"2\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Alla fordonsförsäkringar\"][data-megamenucol=\"2\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    "a[data-topic=\"Personförsäkring\"][data-megamenucol=\"3\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Personförsäkring\"][data-megamenucol=\"3\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    "a[data-topic=\"Förebygga skador\"][data-megamenucol=\"4\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Förebygga skador\"][data-megamenucol=\"4\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".has-children[data-topic=\"Bank\"][href$=\"bank/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".has-children[data-topic=\"Bank\"][href$=\"bank/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    "a[data-topic=\"Bli bankkund\"][data-megamenucol=\"1\"][data-area=\"Bank\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Bli bankkund\"][data-megamenucol=\"1\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    "a[href$=\"lana/\"][data-topic=\"Låna\"][data-megamenucol=\"2\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".navbar-toggle[href$=\"lana/\"][data-topic=\"Låna\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    "a[href$=\"spara/\"][data-topic=\"Spara\"][data-megamenucol=\"4\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".navbar-toggle[href$=\"spara/\"][data-topic=\"Spara\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    "a[data-topic=\"Kort & betalningar\"][data-megamenucol=\"3\"][data-area=\"Bank\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Kort & betalningar\"][data-megamenucol=\"3\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".has-children[data-topic=\"Pension\"][href$=\"pension/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".has-children[data-topic=\"Pension\"][href$=\"pension/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".has-children[data-topic=\"Om oss\"][href$=\"om-oss/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".has-children[data-topic=\"Om oss\"][href$=\"om-oss/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    "a[data-topic=\"Erbjudanden\"][data-megamenucol=\"1\"][data-area=\"Om oss\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Erbjudanden\"][data-megamenucol=\"1\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    "a[data-topic=\"Jobba hos oss\"][data-megamenucol=\"4\"][data-area=\"Om oss\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Jobba hos oss\"][data-megamenucol=\"4\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    "a[data-topic=\"Hållbarhet & forskning\"][data-megamenucol=\"2\"][data-area=\"Om oss\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Hållbarhet & forskning\"][data-megamenucol=\"2\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: Group-7"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<g id=\"Group-7\" transform=\"translate(-234.000000, 2694.000000)\">",
+          "target": [
+            ".has-children[data-topic=\"Försäkring\"][href$=\"forsakring/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: Group-7"
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "faq",
+              "relatedNodes": [
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".has-children[data-topic=\"Försäkring\"][href$=\"forsakring/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    "a[data-topic=\"Alla hemförsäkringar\"][data-megamenucol=\"1\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Alla hemförsäkringar\"][data-megamenucol=\"1\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    "a[data-topic=\"Skadeanmälan\"][data-megamenucol=\"4\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Skadeanmälan\"][data-megamenucol=\"4\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    "a[data-topic=\"Alla fordonsförsäkringar\"][data-megamenucol=\"2\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Alla fordonsförsäkringar\"][data-megamenucol=\"2\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    "a[data-topic=\"Personförsäkring\"][data-megamenucol=\"3\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Personförsäkring\"][data-megamenucol=\"3\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    "a[data-topic=\"Förebygga skador\"][data-megamenucol=\"4\"][data-area=\"Försäkring\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Förebygga skador\"][data-megamenucol=\"4\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".has-children[data-topic=\"Bank\"][href$=\"bank/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".has-children[data-topic=\"Bank\"][href$=\"bank/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    "a[data-topic=\"Bli bankkund\"][data-megamenucol=\"1\"][data-area=\"Bank\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Bli bankkund\"][data-megamenucol=\"1\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    "a[href$=\"lana/\"][data-topic=\"Låna\"][data-megamenucol=\"2\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".navbar-toggle[href$=\"lana/\"][data-topic=\"Låna\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    "a[href$=\"spara/\"][data-topic=\"Spara\"][data-megamenucol=\"4\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".navbar-toggle[href$=\"spara/\"][data-topic=\"Spara\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    "a[data-topic=\"Kort & betalningar\"][data-megamenucol=\"3\"][data-area=\"Bank\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Kort & betalningar\"][data-megamenucol=\"3\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".has-children[data-topic=\"Pension\"][href$=\"pension/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".has-children[data-topic=\"Pension\"][href$=\"pension/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".has-children[data-topic=\"Om oss\"][href$=\"om-oss/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".has-children[data-topic=\"Om oss\"][href$=\"om-oss/\"]:nth-child(2) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    "a[data-topic=\"Erbjudanden\"][data-megamenucol=\"1\"][data-area=\"Om oss\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Erbjudanden\"][data-megamenucol=\"1\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    "a[data-topic=\"Jobba hos oss\"][data-megamenucol=\"4\"][data-area=\"Om oss\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Jobba hos oss\"][data-megamenucol=\"4\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    "a[data-topic=\"Hållbarhet & forskning\"][data-megamenucol=\"2\"][data-area=\"Om oss\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                },
+                {
+                  "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+                  "target": [
+                    ".navbar-toggle[data-topic=\"Hållbarhet & forskning\"][data-megamenucol=\"2\"] > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: faq"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<g id=\"faq\" transform=\"translate(254.000000, 0.000000)\">\n\t\t\t\t\t\t\t\t\t\t<polygon id=\"Page-1\" points=\"404.830127 377.142124 391 363.311582 392.759459 361.552124 404.830127 373.622791 416.900794 361.552124 418.660253 363.311582\"></polygon>\n\t\t\t\t\t\t\t\t\t</g>",
+          "target": [
+            ".has-children[data-topic=\"Försäkring\"][href$=\"forsakring/\"]:nth-child(1) > span > .ml-03[width=\"12px\"][height=\"10px\"] > g[stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"] > g[fill=\"#ffffff\"] > g > g"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: faq"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensures the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/heading-order?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order invalid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<h4 class=\"break-word\">Räkna på bolån</h4>",
+          "target": [
+            "a[href$=\"bolan/\"] > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order invalid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<h4><span class=\"link-complex-target\">Besök oss</span></h4>",
+          "target": [
+            "#contact-visit-us-link > .start-page-contact-btn-content.vertical-sm > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "ACT"
+      ],
+      "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+      "help": "Images must have alternate text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/image-alt?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an alt attribute"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<img src=\"/Static/icons/share.svg\" class=\"d-inline-block footer-text-icon\">",
+          "target": [
+            "img[src$=\"share.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an alt attribute"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<img id=\"geolocation-lf-logo\" class=\"geolocation-company-logo\" src=\"\">",
+          "target": [
+            "#geolocation-lf-logo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "tabindex",
+      "impact": "serious",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "description": "Ensures tabindex attribute values are not greater than 0",
+      "help": "Elements should not have tabindex greater than zero",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/tabindex?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "tabindex",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has a tabindex greater than 0"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"geolocation-footer-dismiss d-md-inline-block btn btn-link mr-15\" tabindex=\"1\" aria-label=\"Stanna kvar på  Länsförsäkringar Stockholm\">\n\t\t\t\t\t\tStanna kvar\n\t\t\t\t\t</button>",
+          "target": [
+            ".mr-15"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "any": [
+            {
+              "id": "tabindex",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has a tabindex greater than 0"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"geolocation-footer-redirect d-md-inline-block btn btn-primary btn-arrow\" tabindex=\"2\" aria-label=\"Ta mig till {0}\">\n\t\t\t\t\t\tTa mig dit\n\t\t\t\t\t</button>",
+          "target": [
+            ".geolocation-footer-redirect.d-md-inline-block[aria-label=\"Ta mig till {0}\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        }
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "ACT"
+      ],
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/color-contrast?application=webdriverio",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#222222",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div type=\"text\" class=\"custom-select-dd\" id=\"companySelection\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t<span>Stockholm</span>\n\t</div>",
+                  "target": [
+                    "#\\34 9585efc3bca4dcabaa170606dd56f4d-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Stockholm</span>",
+          "target": [
+            "#\\34 9585efc3bca4dcabaa170606dd56f4d-desktop > .custom-select-dd[data-toggle=\"dropdown\"][type=\"text\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"header-nav-navy-md-down header-nav-lg\">",
+                  "target": [
+                    ".header-nav-navy-md-down"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>",
+          "target": [
+            ".has-children[data-topic=\"Försäkring\"][href$=\"forsakring/\"]:nth-child(1) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"header-nav-navy-md-down header-nav-lg\">",
+                  "target": [
+                    ".header-nav-navy-md-down"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>",
+          "target": [
+            ".has-children[data-topic=\"Bank\"][href$=\"bank/\"]:nth-child(1) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"header-nav-navy-md-down header-nav-lg\">",
+                  "target": [
+                    ".header-nav-navy-md-down"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>",
+          "target": [
+            ".has-children[data-topic=\"Pension\"][href$=\"pension/\"]:nth-child(1) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"header-nav-navy-md-down header-nav-lg\">",
+                  "target": [
+                    ".header-nav-navy-md-down"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Fastighetsförmedling</span>",
+          "target": [
+            ".d-md-flex[data-topic=\"Fastighetsförmedling\"][data-area=\"\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"header-nav-navy-md-down header-nav-lg\">",
+                  "target": [
+                    ".header-nav-navy-md-down"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>",
+          "target": [
+            ".has-children[data-topic=\"Om oss\"][href$=\"om-oss/\"]:nth-child(1) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "45.0pt (60px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"startpage-tucked-shortcuts-top-image reset-top-image-height top-image top-image-with-shortcuts tucked-shortcuts-top-image lozad fade-lozad\" data-bg-m=\"/48e418/globalassets/aa-global/bilder/toppbilder/startsida/hero-privat-8.jpg?w=1534&amp;h=720\" data-bg-d=\"/48e418/globalassets/aa-global/bilder/toppbilder/startsida/hero-privat-8.jpg?w=1900&amp;h=360\" style=\"background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0) 70%), url(/48e418/globalassets/aa-global/bilder/toppbilder/startsida/hero-privat-8.jpg?w=1900&amp;h=360)\" data-loaded=\"true\">",
+                  "target": [
+                    ".startpage-tucked-shortcuts-top-image"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h1 class=\"display-1 text-top-image-text pb-0 mb-0 text-white\">Vi finns nära i livets alla steg</h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005aa0",
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"font-weight-bold text-blue\">",
+          "target": [
+            ".font-weight-bold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"start-page-campaign-bg lozad fade-lozad\" id=\"campaign-392874\" data-campaign-bg-m=\"/493208/globalassets/stockholm/bilder/ovrigt/kampanjer/hemmet/hink_16_9.jpg?w=555&amp;h=555\" data-campaign-bg-d=\"/493208/globalassets/stockholm/bilder/ovrigt/kampanjer/hemmet/hink_16_9.jpg?w=730&amp;h=380\" style=\"background-image:linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0) 70%), url(/493208/globalassets/stockholm/bilder/ovrigt/kampanjer/hemmet/hink_16_9.jpg?w=730&amp;h=380)\" data-loaded=\"true\">",
+                  "target": [
+                    "#campaign-392874"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tTeckna en hemförsäkring för din villa\n\t\t\t\t\t\t\t\t\t\t\t\t\t</p>",
+          "target": [
+            ".start-page-campaign-lg-content-bottom > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "contrastRatio": 0,
+                "fontSize": "30.0pt (40px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"start-page-campaign-bg lozad fade-lozad\" id=\"campaign-392874\" data-campaign-bg-m=\"/493208/globalassets/stockholm/bilder/ovrigt/kampanjer/hemmet/hink_16_9.jpg?w=555&amp;h=555\" data-campaign-bg-d=\"/493208/globalassets/stockholm/bilder/ovrigt/kampanjer/hemmet/hink_16_9.jpg?w=730&amp;h=380\" style=\"background-image:linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0) 70%), url(/493208/globalassets/stockholm/bilder/ovrigt/kampanjer/hemmet/hink_16_9.jpg?w=730&amp;h=380)\" data-loaded=\"true\">",
+                  "target": [
+                    "#campaign-392874"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h3 class=\"h2\">Vattenvakten Vanja ingår</h3>",
+          "target": [
+            ".p-15 > .h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#ffffff",
+                "contrastRatio": 1,
+                "fontSize": "21.0pt (28px)",
+                "fontWeight": "normal",
+                "messageKey": "equalRatio",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white w-100\">",
+                  "target": [
+                    ".w-100.bg-white"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has a 1:1 contrast ratio with the background"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h3 class=\"h2\"> Vi hjälper dig att framtidssäkra ditt hem</h3>",
+          "target": [
+            "#campaign-link-423352 > .start-page-campaign-sm-content > .p-1.bg-white > .h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a 1:1 contrast ratio with the background"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#ffffff",
+                "contrastRatio": 1,
+                "fontSize": "21.0pt (28px)",
+                "fontWeight": "normal",
+                "messageKey": "equalRatio",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white w-100\">",
+                  "target": [
+                    ".w-100.bg-white"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has a 1:1 contrast ratio with the background"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h3 class=\"h2\">Skaffa en trygg bilförsäkring</h3>",
+          "target": [
+            "#campaign-link-203800 > .start-page-campaign-sm-content > .p-1.bg-white > .h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a 1:1 contrast ratio with the background"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#ffffff",
+                "contrastRatio": 1,
+                "fontSize": "21.0pt (28px)",
+                "fontWeight": "normal",
+                "messageKey": "equalRatio",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-white w-100\">",
+                  "target": [
+                    ".w-100.bg-white"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has a 1:1 contrast ratio with the background"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h3 class=\"h2\"> Hör av dig för ett bra bolåneerbjudande</h3>",
+          "target": [
+            "#campaign-link-235964 > .start-page-campaign-sm-content > .p-1.bg-white > .h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a 1:1 contrast ratio with the background"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005aa0",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"/stockholm/privat/om-oss/press-media/nyheter/\" data-token=\"P5ycgPeuKOTpdSuCO0QZwRhilTptv8iQ39vB5utcuInn1NBboINb5_PEwFbQCH1klSJr3Krh1l3WHRTKWPRa_CkBCgTYg3D07Kdsb2r-40U1:FnDzg5mdDBAaaMjE9_3Fs3-rSjk6SFP5m1tuhuIgInycoT02zp96zETLZGW6W4eSXoS-BHQfptS14pEVKWefxLbgcvwh-fYNU2xRexrBPlQ1\">",
+                  "target": [
+                    ".justify-content-between > a"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/stockholm/privat/om-oss/press-media/nyheter/\" data-token=\"P5ycgPeuKOTpdSuCO0QZwRhilTptv8iQ39vB5utcuInn1NBboINb5_PEwFbQCH1klSJr3Krh1l3WHRTKWPRa_CkBCgTYg3D07Kdsb2r-40U1:FnDzg5mdDBAaaMjE9_3Fs3-rSjk6SFP5m1tuhuIgInycoT02zp96zETLZGW6W4eSXoS-BHQfptS14pEVKWefxLbgcvwh-fYNU2xRexrBPlQ1\">",
+          "target": [
+            ".justify-content-between > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#222222",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div type=\"text\" class=\"custom-select-dd dropdown-toggle\" id=\"current-office\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\t\t\t\tKundcenter Stockholm\n\n\t\t\t\t\t\t</span>\n\t\t\t\t\t</div>",
+                  "target": [
+                    "#current-office"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>\n\t\t\t\t\t\t\t\t\t\tKundcenter Stockholm\n\n\t\t\t\t\t\t</span>",
+          "target": [
+            "#current-office > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#005aa0",
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button class=\"geolocation-footer-dismiss d-md-inline-block btn btn-link mr-15\" tabindex=\"1\" aria-label=\"Stanna kvar på  Länsförsäkringar Stockholm\">\n\t\t\t\t\t\tStanna kvar\n\t\t\t\t\t</button>",
+                  "target": [
+                    ".mr-15"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"geolocation-footer-dismiss d-md-inline-block btn btn-link mr-15\" tabindex=\"1\" aria-label=\"Stanna kvar på  Länsförsäkringar Stockholm\">\n\t\t\t\t\t\tStanna kvar\n\t\t\t\t\t</button>",
+          "target": [
+            ".mr-15"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#222222",
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>",
+          "target": [
+            ".ot-sdk-twelve.ot-sdk-columns > div > p:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+        }
+      ]
+    }
+  ]
+}
