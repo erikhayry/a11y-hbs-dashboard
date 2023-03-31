@@ -23,15 +23,20 @@ export default function Index() {
   const result:IData[] = JSON.parse(data)
 
   return (
-      <div>
-        <h1>Antal fel per banks startsida</h1>
-        <ol>
+      <table cellSpacing="0">
+          <tr>
+              <th>Bank</th>
+              <th>Antal fel</th>
+          </tr>
           {result.sort(byViolations).map(({ name, result:{numberOfViolations, numberOfIncomplete}}) => (
-            <li key={name}>
-                <strong>{name}</strong>: {numberOfViolations + numberOfIncomplete}
-            </li>
+              <tr key={name} style={
+                  { background: `linear-gradient(90deg, hsl(205.45deg 100% 22.35%) 1%, hsl(205.45deg 100% 32.35%) 1%)"`}
+              }>
+                  <td>{name}</td>
+                  <td>{numberOfViolations + numberOfIncomplete}</td>
+              </tr>
           ))}
-        </ol>
-      </div>
+
+      </table>
   );
 }
